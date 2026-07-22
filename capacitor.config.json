@@ -1,0 +1,8 @@
+{
+  "appId": "jp.wordquest.app",
+  "appName": "WORD QUEST",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

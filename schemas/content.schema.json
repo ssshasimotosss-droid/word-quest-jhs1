@@ -1,0 +1,267 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://word-quest.local/schemas/content.schema.json",
+  "title": "WORD QUEST content bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contentVersion", "metadata", "words", "phrases", "grammarUnits", "questions"],
+  "properties": {
+    "contentVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "metadata": { "$ref": "#/$defs/metadata" },
+    "words": {
+      "type": "array",
+      "minItems": 20,
+      "items": { "$ref": "#/$defs/word" }
+    },
+    "phrases": {
+      "type": "array",
+      "minItems": 12,
+      "items": { "$ref": "#/$defs/phrase" }
+    },
+    "grammarUnits": {
+      "type": "array",
+      "minItems": 10,
+      "items": { "$ref": "#/$defs/grammarUnit" }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 50,
+      "items": { "$ref": "#/$defs/question" }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "grade": {
+      "type": "string",
+      "enum": ["elementary", "jhs1"]
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "ja"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "ja": { "type": "string", "minLength": 1 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "locale", "createdFor", "source", "license", "licenseNote"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "locale": { "const": "ja-JP" },
+        "createdFor": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 },
+        "licenseNote": { "type": "string", "minLength": 1 }
+      }
+    },
+    "forms": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["plural", "thirdPersonSingular", "past", "pastParticiple", "ing"],
+      "properties": {
+        "plural": { "type": ["string", "null"] },
+        "thirdPersonSingular": { "type": ["string", "null"] },
+        "past": { "type": ["string", "null"] },
+        "pastParticiple": { "type": ["string", "null"] },
+        "ing": { "type": ["string", "null"] }
+      }
+    },
+    "word": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "lemma",
+        "displayForm",
+        "meaningsJa",
+        "partOfSpeech",
+        "grade",
+        "stage",
+        "difficulty",
+        "forms",
+        "example",
+        "source",
+        "license",
+        "isActive"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "lemma": { "type": "string", "minLength": 1 },
+        "displayForm": { "type": "string", "minLength": 1 },
+        "meaningsJa": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "partOfSpeech": {
+          "type": "string",
+          "enum": ["noun", "verb", "adjective", "adverb", "pronoun", "preposition", "conjunction", "other"]
+        },
+        "grade": { "$ref": "#/$defs/grade" },
+        "stage": { "type": "integer", "minimum": 1 },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "forms": { "$ref": "#/$defs/forms" },
+        "example": { "$ref": "#/$defs/example" },
+        "source": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 },
+        "isActive": { "type": "boolean" }
+      }
+    },
+    "phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "expression",
+        "meaningJa",
+        "type",
+        "grade",
+        "difficulty",
+        "example",
+        "source",
+        "license",
+        "isActive"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "expression": { "type": "string", "minLength": 1 },
+        "meaningJa": { "type": "string", "minLength": 1 },
+        "type": {
+          "type": "string",
+          "enum": ["phrase", "idiom", "greeting", "response", "classroom_expression", "daily_expression"]
+        },
+        "grade": { "$ref": "#/$defs/grade" },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "example": { "$ref": "#/$defs/example" },
+        "source": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 },
+        "isActive": { "type": "boolean" }
+      }
+    },
+    "grammarUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "grade",
+        "stage",
+        "difficulty",
+        "shortExplanation",
+        "learningGoal",
+        "examples",
+        "source",
+        "license",
+        "isActive"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "type": "string", "minLength": 1 },
+        "grade": { "$ref": "#/$defs/grade" },
+        "stage": { "type": "integer", "minimum": 1 },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "shortExplanation": { "type": "string", "minLength": 1 },
+        "learningGoal": { "type": "string", "minLength": 1 },
+        "examples": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/example" }
+        },
+        "source": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 },
+        "isActive": { "type": "boolean" }
+      }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "contentType",
+        "contentId",
+        "questionType",
+        "prompt",
+        "choices",
+        "correctAnswer",
+        "hint",
+        "explanation",
+        "difficulty"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "contentType": {
+          "type": "string",
+          "enum": ["word", "phrase", "grammar"]
+        },
+        "contentId": { "$ref": "#/$defs/id" },
+        "questionType": {
+          "type": "string",
+          "enum": [
+            "en_to_ja_choice",
+            "ja_to_en_choice",
+            "spelling",
+            "fill_blank",
+            "word_order",
+            "conversation_choice",
+            "listening_choice"
+          ]
+        },
+        "audioText": { "type": "string", "minLength": 1 },
+        "prompt": { "type": "string", "minLength": 1 },
+        "choices": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "correctAnswer": { "type": "string", "minLength": 1 },
+        "hint": { "type": "string", "minLength": 1 },
+        "explanation": { "type": "string", "minLength": 1 },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 6 }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "questionType": {
+                "enum": ["en_to_ja_choice", "ja_to_en_choice", "conversation_choice", "listening_choice"]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "choices": { "minItems": 3 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "questionType": { "const": "listening_choice" } }
+          },
+          "then": {
+            "required": ["audioText"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "questionType": { "const": "word_order" } }
+          },
+          "then": {
+            "properties": {
+              "choices": { "minItems": 2 }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

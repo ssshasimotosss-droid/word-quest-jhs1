@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist-pages/
+.netlify/
+.DS_Store
+coverage/
+tests/screenshots/*.png
+npm-debug.log*

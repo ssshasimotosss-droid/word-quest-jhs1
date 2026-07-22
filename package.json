@@ -1,0 +1,32 @@
+{
+  "name": "word-quest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "息子さん専用の、スマホで遊べる中学英語学習クエスト",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "build:pages": "VITE_BASE_PATH=/word-quest-jhs1/ vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "check": "npm run test && npm run build",
+    "cap:add:android": "npm run build && cap add android",
+    "cap:sync": "npm run build && cap sync",
+    "android:open": "npm run cap:sync && cap open android"
+  },
+  "dependencies": {
+    "@capacitor/core": "8.4.2",
+    "@capacitor/local-notifications": "8.2.1"
+  },
+  "devDependencies": {
+    "@capacitor/android": "8.4.2",
+    "@capacitor/cli": "8.4.2",
+    "playwright-core": "^1.61.1",
+    "vite": "8.1.5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
