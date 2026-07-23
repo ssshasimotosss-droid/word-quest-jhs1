@@ -1,4 +1,4 @@
-const CACHE_VERSION = "word-quest-v5";
+const CACHE_VERSION = "word-quest-v6";
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const APP_SCOPE = new URL("./", self.location.href);
@@ -11,6 +11,7 @@ const CORE_ASSETS = [
   "icon-192.png",
   "icon-512.png",
   "assets/quest-world.jpg",
+  "assets/enemy-sprites.png",
   "data/content.json",
 ].map(appUrl);
 
