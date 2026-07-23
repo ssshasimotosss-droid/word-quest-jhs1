@@ -318,23 +318,6 @@ export function getAvailableBgmThemes() {
   return Object.keys(BGM_THEMES);
 }
 
-function waitForVoices(synth, timeoutMs = 900) {
-  const initial = synth.getVoices?.() ?? [];
-  if (initial.length || typeof synth.addEventListener !== "function") return Promise.resolve(initial);
-  return new Promise((resolve) => {
-    let settled = false;
-    const finish = () => {
-      if (settled) return;
-      settled = true;
-      globalThis.clearTimeout(timer);
-      synth.removeEventListener?.("voiceschanged", finish);
-      resolve(synth.getVoices?.() ?? []);
-    };
-    const timer = globalThis.setTimeout(finish, timeoutMs);
-    synth.addEventListener("voiceschanged", finish, { once: true });
-  });
-}
-
 function duckBgm(ducked) {
   if (!audioContext || !bgmMaster) return;
   const target = !settings.bgmEnabled ? 0 : ducked ? Math.min(0.025, settings.bgmVolume * 0.12) : settings.bgmVolume;
@@ -361,14 +344,19 @@ export async function speak(text, options = {}) {
   utterance.pitch = clamp(options.pitch ?? settings.speechPitch, 0.5, 1.5);
   utterance.volume = clamp(options.volume ?? settings.speechVolume, 0, 1);
 
-  const voices = await waitForVoices(synth, options.voiceTimeoutMs ?? 900);
+  // Android Chrome can require speechSynthesis.speak() to run in the original
+  // tap handler. Do not wait for `voiceschanged` here: that would lose the user
+  // activation and make the utterance silently fail on some Android devices.
+  const voices = synth.getVoices?.() ?? [];
   const preferredVoice = options.voice || settings.preferredVoice;
-  utterance.voice =
+  const selectedVoice =
     voices.find((voice) => preferredVoice && voice.name === preferredVoice) ||
     voices.find((voice) => String(voice.lang).toLowerCase() === utterance.lang.toLowerCase()) ||
     voices.find((voice) => String(voice.lang).toLowerCase().startsWith("en-us")) ||
-    voices.find((voice) => String(voice.lang).toLowerCase().startsWith("en")) ||
-    null;
+    voices.find((voice) => String(voice.lang).toLowerCase().startsWith("en"));
+  // Leave the voice unset when Android has not populated its list yet. The
+  // platform can then use its default English voice instead of a forced null.
+  if (selectedVoice) utterance.voice = selectedVoice;
 
   return new Promise((resolve) => {
     let settled = false;
@@ -387,6 +375,7 @@ export async function speak(text, options = {}) {
     );
     duckBgm(true);
     try {
+      synth.resume?.();
       synth.speak(utterance);
     } catch {
       finish(false);

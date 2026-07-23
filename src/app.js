@@ -1407,7 +1407,10 @@ async function handleClick(event) {
   else if (action === "retry-mode") openModeModal(target.dataset.mode);
   else if (action === "toggle-profile-grade") await toggleProfileGrade(target.dataset.grade);
   else if (action === "test-sound") { await unlockForSound(); playSfx("correct"); ensureBgm("home"); }
-  else if (action === "test-speech") speak("You can do it! Keep going.");
+  else if (action === "test-speech") {
+    const spoken = await speak("You can do it! Keep going.");
+    if (!spoken) showToast("英語音声を開始できませんでした。Androidの『Speech Services by Google』と英語音声を確認してください。", 5200);
+  }
   else if (action === "test-notification") {
     const result = await showTestNotification();
     showToast(result.shown ? "テスト通知を送りました。" : "通知が許可されていません。");

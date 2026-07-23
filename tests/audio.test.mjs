@@ -38,3 +38,41 @@ test("speech synthesis receives the exact text and an English voice", async () =
     globalThis.SpeechSynthesisUtterance = previousUtterance;
   }
 });
+
+test("speech starts immediately when Android has not loaded voices yet", async () => {
+  const previousSynth = globalThis.speechSynthesis;
+  const previousUtterance = globalThis.SpeechSynthesisUtterance;
+  let spoken = null;
+  let resumed = false;
+
+  class FakeUtterance extends EventTarget {
+    constructor(text) {
+      super();
+      this.text = text;
+      this.lang = "";
+      this.voice = "unchanged";
+    }
+  }
+
+  globalThis.SpeechSynthesisUtterance = FakeUtterance;
+  globalThis.speechSynthesis = {
+    cancel() {},
+    resume() { resumed = true; },
+    getVoices() { return []; },
+    speak(utterance) {
+      spoken = utterance;
+      queueMicrotask(() => utterance.dispatchEvent(new Event("end")));
+    },
+  };
+
+  try {
+    const completion = speak("watch");
+    assert.equal(spoken?.text, "watch", "speech must begin within the tap handler");
+    assert.equal(spoken?.voice, "unchanged", "no voice should be forced before Android loads voices");
+    assert.equal(resumed, true);
+    assert.equal(await completion, true);
+  } finally {
+    globalThis.speechSynthesis = previousSynth;
+    globalThis.SpeechSynthesisUtterance = previousUtterance;
+  }
+});
