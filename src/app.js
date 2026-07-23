@@ -344,7 +344,7 @@ function renderOnboarding() {
             ${gradeOption("jhs1", "⚔️", "中学1年", "単語・熟語・基本文法")}
           </div>
         </div>
-        <div class="privacy-note">🔒 ログイン、広告、位置情報は使いません。学習記録は息子さんの端末内に保存されます。</div>
+        <div class="privacy-note">🔒 ログイン、広告、位置情報は使いません。学習記録は利用中の端末内に保存されます。</div>
         <button class="primary-button" style="width:100%;margin-top:18px" type="button" data-action="finish-onboarding">
           冒険をはじめる →
         </button>

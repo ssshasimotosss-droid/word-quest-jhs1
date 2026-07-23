@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "息子さん専用の、スマホで遊べる中学英語学習クエスト",
+  "description": "スマホで楽しく遊べる、中学生向け英語学習クエスト",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
