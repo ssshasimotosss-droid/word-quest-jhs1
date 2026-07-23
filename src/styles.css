@@ -811,33 +811,21 @@ body.keyboard-navigation .skip-link:focus-visible {
 
 .monster {
   position: relative;
-  width: 78px;
-  height: 63px;
-  background: linear-gradient(145deg, #6ef4df, #2680d8 72%);
-  border: 3px solid rgba(225, 255, 255, 0.8);
-  border-radius: 52% 48% 45% 45% / 66% 66% 38% 38%;
-  box-shadow: 0 10px 18px rgba(0, 15, 40, 0.4), 0 0 25px rgba(85, 230, 255, 0.4);
+  width: 106px;
+  height: 106px;
+  background-image: var(--enemy-image);
+  background-repeat: no-repeat;
+  background-position: var(--enemy-x) var(--enemy-y);
+  background-size: 300% 200%;
+  filter: drop-shadow(0 10px 9px rgba(0, 15, 40, 0.52)) drop-shadow(0 0 11px rgba(85, 230, 255, 0.22));
   animation: monster-float 2.4s ease-in-out infinite;
 }
 
-.monster::before,
-.monster::after {
-  position: absolute;
-  top: 23px;
-  width: 8px;
-  height: 11px;
-  content: "";
-  background: #071633;
-  border-radius: 50%;
-}
+.monster-bat,
+.monster-mushroom { transform-origin: 50% 60%; }
 
-.monster::before {
-  left: 22px;
-}
-
-.monster::after {
-  right: 22px;
-}
+.monster-mimic,
+.monster-golem { transform-origin: 50% 80%; }
 
 .monster-name {
   margin-top: 7px;

@@ -70,6 +70,14 @@ const GRADE_LABELS = {
   junior_1: "中学1年",
 };
 const DAILY_LIMITS = { 3: 8, 5: 12, 10: 20, 15: 30 };
+const ENEMIES = [
+  { id: "slime", name: "ワードスライム", x: "0%", y: "0%" },
+  { id: "bat", name: "エコーバット", x: "50%", y: "0%" },
+  { id: "mimic", name: "ブックミミック", x: "100%", y: "0%" },
+  { id: "mushroom", name: "グラマーキノコ", x: "0%", y: "100%" },
+  { id: "dragon", name: "フレイムドラゴン", x: "50%", y: "100%" },
+  { id: "golem", name: "ゴールデンゴーレム", x: "100%", y: "100%" },
+];
 
 const state = {
   content: null,
@@ -105,6 +113,14 @@ function escapeHtml(value) {
 
 function clamp(value, minimum, maximum) {
   return Math.min(maximum, Math.max(minimum, Number(value) || 0));
+}
+
+function enemyForSession(session) {
+  if (session.mode === "boss") {
+    return ENEMIES[session.index >= Math.ceil(session.queue.length / 2) ? 5 : 4];
+  }
+  const categoryOffset = { word: 0, listening: 1, grammar: 2, mixed: 3 }[session.selectedCategory] ?? 0;
+  return ENEMIES[(categoryOffset + session.index) % ENEMIES.length];
 }
 
 function formatNumber(value) {
@@ -620,6 +636,7 @@ function renderGame() {
     ? clamp((session.timeRemaining / session.durationSeconds) * 100, 0, 100)
     : clamp(((session.index + (session.locked ? 1 : 0)) / session.queue.length) * 100, 0, 100);
   const enemyHp = clamp(100 - ((session.index + session.correctCount * 0.3) / session.queue.length) * 100, 0, 100);
+  const enemy = enemyForSession(session);
   const categoryLabel = DAILY_CATEGORY_LABELS[session.selectedCategory]
     ?? (questionType(question) === "listening_choice" ? DAILY_CATEGORY_LABELS.listening : DAILY_CATEGORY_LABELS[questionContentType(question)]);
   app.innerHTML = `
@@ -635,7 +652,7 @@ function renderGame() {
           <div class="hud-chip"><span>SCORE</span><strong>${formatNumber(session.score)}</strong></div>
           <div class="hud-chip" style="text-align:right"><span>COMBO</span><strong>${session.combo} ×</strong></div>
         </div>
-        <div class="monster-wrap"><div id="monster" class="monster" aria-hidden="true"></div><span class="monster-name">Word Slime ・ HP ${Math.ceil(enemyHp)}%</span></div>
+        <div class="monster-wrap"><div id="monster" class="monster monster-${enemy.id}" aria-hidden="true" style="--enemy-image:url('${APP_BASE_URL}assets/enemy-sprites.png');--enemy-x:${enemy.x};--enemy-y:${enemy.y}"></div><span class="monster-name">${enemy.name} ・ HP ${Math.ceil(enemyHp)}%</span></div>
       </div>
       <article class="question-panel glass-card">
         <div class="question-meta"><span class="question-badges"><span class="question-type">${escapeHtml(QUESTION_TYPE_LABELS[type] ?? type)}</span>${categoryLabel ? `<span class="question-category">${escapeHtml(categoryLabel)}</span>` : ""}</span><span class="difficulty-dots" aria-label="難しさ ${question.difficulty ?? 1}">${"●".repeat(question.difficulty ?? 1)}${"○".repeat(Math.max(0, 3 - (question.difficulty ?? 1)))}</span></div>

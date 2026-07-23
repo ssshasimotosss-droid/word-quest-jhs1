@@ -79,7 +79,15 @@ await page.screenshot({ path: path.join(screenshotDirectory, "mobile-game.png"),
 
 let answered = 0;
 const dailyQuestionTypes = [];
+const encounteredEnemies = new Set();
 while ((await page.locator(".question-panel").count()) && answered < 12) {
+  const enemyName = (await page.locator(".monster-name").innerText()).split("・")[0].trim();
+  encounteredEnemies.add(enemyName);
+  assert.match(
+    await page.locator("#monster").evaluate((element) => getComputedStyle(element).backgroundImage),
+    /enemy-sprites\.png/,
+    "battle enemy should use the generated sprite sheet",
+  );
   const prompt = (await page.locator(".question-prompt").innerText()).trim();
   const question = questionByPrompt.get(prompt);
   assert.ok(question, `question prompt should exist in content: ${prompt}`);
@@ -95,6 +103,7 @@ while ((await page.locator(".question-panel").count()) && answered < 12) {
 
 assert.equal(dailyQuestionTypes.includes("listening_choice"), true, "mixed daily quest should include listening");
 assert.equal(dailyQuestionTypes.some((type) => type !== "listening_choice"), true, "mixed daily quest should include non-listening questions");
+assert.ok(encounteredEnemies.size >= 4, "a short quest should encounter at least four enemy characters");
 
 await page.locator(".result-card").waitFor({ timeout: 10_000 });
 assert.match(await page.locator(".score-number").innerText(), /[1-9]/, "completed quest should award points");
