@@ -315,7 +315,7 @@ if ("serviceWorker" in navigator) {
 
 ## 12. GitHub Pages配信
 
-正式公開先はGitHubリポジトリ`word-quest-jhs1`のGitHub Pagesです。公開URLは`https://ssshasimotosss-droid.github.io/word-quest-jhs1/`です。
+正式公開先はGitHubリポジトリ`word-quest-jhs1`のGitHub Pagesです。公開URLは`https://ssshasimotosss-droid.github.io/word-quest-jhs1/`で、初回配信コミットは`fb5226b`です。HTTP 200と公開URLに対するChrome E2Eを確認済みです。
 
 `main`ブランチにはソース、`gh-pages`ブランチには検証後の`dist/`のみを置きます。GitHub Pagesの公開元は`gh-pages`ブランチのルートです。これにより、現在のGitHub認証にActions workflow書き込み権限を追加せずに配信できます。
 
@@ -323,7 +323,7 @@ if ("serviceWorker" in navigator) {
 
 GitHub Pagesは静的ファイルだけを配信し、学習履歴は受け取りません。記録はIndexedDBまたは`localStorage`に保存され、同じPages URLへの再公開では通常維持されます。旧公開URLとはオリジンが異なるため、必要な記録はJSONバックアップで移します。
 
-`noindex`と`robots.txt`は検索避けであり、アクセス制御ではありません。公開後はPages URLで読込、Service Worker、オフライン再読込、端末内記録、PWAを再確認します。
+`noindex`と`robots.txt`は検索避けであり、アクセス制御ではありません。公開後のPages URLで読込、Service Worker、強制オフライン再読込、IndexedDBの記録保持を確認済みです。
 
 ## 13. Android／iOS移行計画
 
@@ -433,6 +433,8 @@ npm run test:e2e
 - Console Error／Page Errorは0件
 - モバイル4画面とデスクトップ初回画面のスクリーンショットを目視確認
 - `VITE_BASE_PATH`と`gh-pages`ブランチによるPages公開経路を実装
+- GitHub PagesのHTTPS URLで200応答、サブパス資産、コンテンツ版`1.1.0`を確認
+- 公開URLのChrome E2Eで学習、保存、バックアップ、Service Worker、強制オフライン再読込、エラー0件を確認
 
 ### 残る実機確認
 
@@ -480,8 +482,8 @@ npm run test:e2e
 - [x] Console Error／Page Errorなし
 - [x] 生成スクリーンショットを目視確認
 - [x] `VITE_BASE_PATH`対応と`gh-pages`配信手順を実装
-- [ ] GitHub Pagesへ正式公開し、HTTPS URLを確認
-- [ ] GitHub Pages URLで読込、Service Worker、オフライン、端末内保存を確認
+- [x] GitHub Pagesへ正式公開し、HTTPS URLのHTTP 200を確認
+- [x] GitHub Pages URLで読込、Service Worker、オフライン、端末内保存を確認
 - [ ] BGM、効果音、読み上げの実聴
 - [ ] 通知の有効／無効、拒否、学校時間／深夜回避
 - [ ] Android／iPhone実機へのPWAインストールとホーム画面からの起動

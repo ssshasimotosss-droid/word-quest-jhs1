@@ -63,7 +63,7 @@ npm run dev
 | `npm run cap:sync` | Webビルド後にCapacitorへ同期 |
 | `npm run android:open` | Android Studioで開く |
 
-現在、`npm test`は21件すべて成功しています。`VITE_BASE_PATH=/word-quest-jhs1/`を指定したVite 8.1.5の一時ビルドも成功し、HTMLとCSSの資産URLが`/word-quest-jhs1/`配下へ変換されることを確認しています。
+現在、`npm test`は21件すべて成功しています。Pages用ビルドと公開URLのHTTP 200を確認し、公開URLに対する390×844のChrome E2Eで、今日の4カテゴリ、全部ミックス、英単語ステージ12問、保存、バックアップ、Service Worker、強制オフライン再読込を確認しています。
 
 ## GitHub Pages公開
 

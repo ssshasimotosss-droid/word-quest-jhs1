@@ -49,7 +49,10 @@ const page = await context.newPage();
 const errors = [];
 page.on("pageerror", (error) => errors.push(`pageerror: ${error.message}`));
 page.on("console", (message) => {
-  if (message.type() === "error") errors.push(`console: ${message.text()}`);
+  if (message.type() === "error") {
+    const location = message.location();
+    errors.push(`console: ${message.text()}${location.url ? ` @ ${location.url}:${location.lineNumber}` : ""}`);
+  }
 });
 
 await page.goto(process.env.WORD_QUEST_URL || "http://127.0.0.1:4173", { waitUntil: "networkidle" });
