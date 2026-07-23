@@ -77,7 +77,9 @@ const vocabulary = [
   ["come", "来る", "verb", ["comes", "came", "come", "coming"], "Come to my house after school.", "放課後私の家に来てください。"],
   ["live", "住む", "verb", ["lives", "lived", "lived", "living"], "I live in this city.", "私はこの都市に住んでいます。"],
   ["work", "働く", "verb", ["works", "worked", "worked", "working"], "My father works every day.", "私の父は毎日働いています。"],
-  ["watch", "見る", "verb", ["watches", "watched", "watched", "watching"], "We watch a movie at home.", "私たちは家で映画を見ます。"],
+  ["see", "自然に見える・目に入る", "verb", ["sees", "saw", "seen", "seeing"], "I can see a bird in the tree.", "木に鳥が見えます。"],
+  ["look", "目を向けて見る", "verb", ["looks", "looked", "looked", "looking"], "Look at this picture.", "この写真を見てください。"],
+  ["watch", "テレビ・動画などを見る", "verb", ["watches", "watched", "watched", "watching"], "We watch TV after dinner.", "私たちは夕食後にテレビを見ます。"],
   ["listen", "聞く", "verb", ["listens", "listened", "listened", "listening"], "Listen to the teacher.", "先生の話を聞きなさい。"],
   ["read", "読む", "verb", ["reads", "read", "read", "reading"], "I read a book after dinner.", "私は夕食の後に本を読みます。"],
   ["write", "書く", "verb", ["writes", "wrote", "written", "writing"], "Write your name here.", "ここに名前を書いてください。"],
@@ -139,25 +141,34 @@ function alternatives(items, current, key, count = 3) {
 for (const [index, word] of addedWords.entries()) {
   const meaning = word.meaningsJa[0];
   const meaningChoices = [meaning, ...alternatives(addedWords, index, (item) => item.meaningsJa[0])];
-  const englishChoices = [word.lemma, ...alternatives(addedWords, index, (item) => item.lemma)];
+  const visionWords = ["see", "look", "watch"];
+  const englishChoices = visionWords.includes(word.lemma.toLowerCase())
+    ? [word.lemma, ...visionWords.filter((lemma) => lemma !== word.lemma.toLowerCase()), "read"]
+    : [word.lemma, ...alternatives(addedWords, index, (item) => item.lemma)];
   const base = `question_jhs1_${word.lemma.toLowerCase()}`;
   const initial = word.lemma[0].toUpperCase();
+  const usageHints = {
+    see: "意識しなくても自然に目に入る・見えるときに使います。",
+    look: "意識して人や物に目を向けるときに使います。",
+    watch: "テレビ・動画・試合など、動くものを続けて見るときに使います。",
+  };
+  const hint = usageHints[word.lemma.toLowerCase()] ?? `最初の文字は ${initial} です。`;
 
   content.questions.push(
     {
       id: `${base}_meaning`, contentType: "word", contentId: word.id, questionType: "en_to_ja_choice",
       prompt: `${word.lemma} の意味はどれ？`, choices: meaningChoices, correctAnswer: meaning,
-      hint: `最初の文字は ${initial} です。`, explanation: `${word.lemma} は「${meaning}」という意味です。`, difficulty: word.difficulty,
+      hint, explanation: `${word.lemma} は「${meaning}」という意味です。例文: ${word.example.en}`, difficulty: word.difficulty,
     },
     {
       id: `${base}_production`, contentType: "word", contentId: word.id, questionType: "ja_to_en_choice",
-      prompt: `「${meaning}」を英語で選ぼう。`, choices: englishChoices, correctAnswer: word.lemma,
-      hint: `最初の文字は ${initial} です。`, explanation: `「${meaning}」は ${word.lemma} といいます。`, difficulty: word.difficulty,
+      prompt: `例文「${word.example.ja}」で使う「${meaning}」の英単語は？`, choices: englishChoices, correctAnswer: word.lemma,
+      hint, explanation: `この場面では ${word.lemma} を使います。${word.example.en}`, difficulty: word.difficulty,
     },
     {
       id: `${base}_spelling`, contentType: "word", contentId: word.id, questionType: "spelling",
-      prompt: `「${meaning}」を英語で入力しよう。`, choices: [], correctAnswer: word.lemma,
-      hint: `最初の文字は ${initial} です。`, explanation: `${word.lemma} のつづりを完成させよう。`, difficulty: Math.min(6, word.difficulty + 1),
+      prompt: `例文「${word.example.ja}」の「${meaning}」を英語で入力しよう。`, choices: [], correctAnswer: word.lemma,
+      hint, explanation: `${word.lemma} のつづりを完成させよう。${word.example.en}`, difficulty: Math.min(6, word.difficulty + 1),
     },
     {
       id: `${base}_listening`, contentType: "word", contentId: word.id, questionType: "listening_choice",
@@ -168,6 +179,6 @@ for (const [index, word] of addedWords.entries()) {
   );
 }
 
-content.contentVersion = "1.2.0";
+content.contentVersion = "1.3.0";
 await writeFile(contentUrl, `${JSON.stringify(content, null, 2)}\n`);
 console.log(`Added ${addedWords.length} words and ${addedWords.length * 4} questions.`);

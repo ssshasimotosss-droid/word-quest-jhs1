@@ -13,7 +13,7 @@
     "metadata": { "$ref": "#/$defs/metadata" },
     "words": {
       "type": "array",
-      "minItems": 112,
+      "minItems": 114,
       "items": { "$ref": "#/$defs/word" }
     },
     "phrases": {
@@ -28,7 +28,7 @@
     },
     "questions": {
       "type": "array",
-      "minItems": 430,
+      "minItems": 438,
       "items": { "$ref": "#/$defs/question" }
     }
   },

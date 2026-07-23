@@ -50,18 +50,18 @@ test('content bundle is versioned and meets the requested minimum counts', () =>
   assert.ok(content.metadata.license.length > 0);
   assert.ok(content.metadata.licenseNote.length > 0);
 
-  assert.ok(content.words.length >= 112, 'at least 112 words are required');
+  assert.ok(content.words.length >= 114, 'at least 114 words are required');
   assert.ok(content.phrases.length >= 12, 'at least 12 phrases are required');
   assert.ok(content.grammarUnits.length >= 10, 'at least 10 grammar units are required');
-  assert.ok(content.questions.length >= 430, 'at least 430 explicit questions are required');
+  assert.ok(content.questions.length >= 438, 'at least 438 explicit questions are required');
 
   const elementaryWords = content.words.filter((word) => word.grade === 'elementary');
   const jhs1Words = content.words.filter((word) => word.grade === 'jhs1');
   assert.ok(elementaryWords.length > 0, 'elementary words are required');
-  assert.ok(jhs1Words.length >= 100, 'at least 100 jhs1 words are required');
+  assert.ok(jhs1Words.length >= 102, 'at least 102 jhs1 words are required');
 
   const expandedWordQuestions = content.questions.filter(({ id }) => id.startsWith('question_jhs1_'));
-  assert.equal(expandedWordQuestions.length, 352, '88 added words need four questions each');
+  assert.equal(expandedWordQuestions.length, 360, '90 added words need four questions each');
   const expectedTypes = new Set(['en_to_ja_choice', 'ja_to_en_choice', 'spelling', 'listening_choice']);
   for (const word of jhs1Words.filter(({ id }) => id.startsWith('word_jhs1_') && ![
     'word_jhs1_study', 'word_jhs1_speak', 'word_jhs1_library', 'word_jhs1_subject',
@@ -81,10 +81,29 @@ test('JSON Schema declares the same content sections and minimums', () => {
     new Set(schema.required),
     new Set(['contentVersion', 'metadata', 'words', 'phrases', 'grammarUnits', 'questions']),
   );
-  assert.equal(schema.properties.words.minItems, 112);
+  assert.equal(schema.properties.words.minItems, 114);
   assert.equal(schema.properties.phrases.minItems, 12);
   assert.equal(schema.properties.grammarUnits.minItems, 10);
-  assert.equal(schema.properties.questions.minItems, 430);
+  assert.equal(schema.properties.questions.minItems, 438);
+});
+
+test('see, look, and watch are distinguished with context and shared choices', () => {
+  const expectedMeanings = {
+    see: '自然に見える・目に入る',
+    look: '目を向けて見る',
+    watch: 'テレビ・動画などを見る',
+  };
+
+  for (const [lemma, meaning] of Object.entries(expectedMeanings)) {
+    const word = content.words.find(({ id }) => id === `word_jhs1_${lemma}`);
+    assert.equal(word?.meaningsJa[0], meaning);
+
+    const production = content.questions.find(({ id }) => id === `question_jhs1_${lemma}_production`);
+    assert.ok(production.prompt.includes(word.example.ja), `${lemma} needs a Japanese context sentence`);
+    assert.deepEqual(new Set(production.choices), new Set(['see', 'look', 'watch', 'read']));
+    assert.equal(production.correctAnswer, lemma);
+    assert.match(production.hint, /目|テレビ|動画|試合/);
+  }
 });
 
 test('content IDs are valid and unique, including across content collections', () => {

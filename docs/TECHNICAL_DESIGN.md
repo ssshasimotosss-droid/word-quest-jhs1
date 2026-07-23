@@ -4,7 +4,7 @@
 
 本書は、息子さん1人が主にスマートフォンで使う英語学習ゲームを、Web-firstのPWAとして完成させ、将来CapacitorでAndroid／iOSへ移行するための設計です。
 
-2026-07-23時点の実装を確認して記載しています。正式公開先はGitHubリポジトリ`word-quest-jhs1`のGitHub Pagesです。中学1年100語を含む430問、今日のクエスト4カテゴリ、端末内保存、Speech Synthesisによるリスニング、リポジトリ配下へ配置するためのbase path対応まで実装済みです。`npm test`は21件すべて成功し、`VITE_BASE_PATH=/word-quest-jhs1/`の一時ビルドも成功しています。音が実際に聞こえるかと発音品質は自動テストでは判定できません。
+2026-07-23時点の実装を確認して記載しています。正式公開先はGitHubリポジトリ`word-quest-jhs1`のGitHub Pagesです。中学1年102語を含む438問、今日のクエスト4カテゴリ、端末内保存、Speech Synthesisによるリスニング、リポジトリ配下へ配置するためのbase path対応まで実装済みです。`npm test`は22件すべて成功し、`VITE_BASE_PATH=/word-quest-jhs1/`の一時ビルドも成功しています。音が実際に聞こえるかと発音品質は自動テストでは判定できません。
 
 ## 2. 設計判断
 
@@ -56,8 +56,8 @@ flowchart TD
 | `src/app.js` | 実装済み | 初回設定、画面遷移、5学習モード、4つの今日カテゴリ、7問題形式、履歴、設定、保護者PIN、バックアップ、音・通知・PWA接続 |
 | `src/question-categories.js` | 実装・単体テスト済み | 単語、文法、リスニング、全部ミックスの分類と日次キュー |
 | `src/question-audio.js` | 実装・単体テスト済み | 問題形式ごとに読み上げる単語・完成英文・`audioText`を解決 |
-| `public/data/content.json` | 実装・検証済み | 学習コンテンツ`1.2.0`、中学1年100語を含む430問 |
-| `scripts/expand-jhs1-vocabulary.mjs` | 実装済み | 追加88語と、各語の意味・日本語→英語・スペル・リスニングを再現可能に生成 |
+| `public/data/content.json` | 実装・検証済み | 学習コンテンツ`1.3.0`、中学1年102語を含む438問 |
+| `scripts/expand-jhs1-vocabulary.mjs` | 実装済み | 追加90語と、各語の意味・日本語→英語・スペル・リスニングを再現可能に生成 |
 | `schemas/content.schema.json` | 実装済み | コンテンツ形式と最低件数を表すJSON Schema |
 | `docs/schema.sql` | 設計資料 | 将来SQLiteを採用する場合の表・索引・参照トリガー。現在のWebランタイムでは未使用 |
 | `public/manifest.webmanifest` | 実装済み | PWA名、色、表示形式、192px／512px PNGアイコン、ショートカット |
@@ -66,7 +66,7 @@ flowchart TD
 | `gh-pages`ブランチ | 配信用 | 検証済みの`dist/`のみを置くGitHub Pages公開元 |
 | `vite.config.js` | 実装・ビルド確認済み | `VITE_BASE_PATH`またはGitHubリポジトリ名からViteの`base`を解決 |
 | `capacitor.config.json` | 実装済み | `jp.wordquest.app`、`WORD QUEST`、`dist`を定義 |
-自動テスト21件とGitHub Pages用base pathのビルドは確認済みです。通知許可、音の聞こえ方、実スマホへのPWAインストールは別途実機確認が必要です。
+自動テスト22件とGitHub Pages用base pathのビルドは確認済みです。通知許可、音の聞こえ方、実スマホへのPWAインストールは別途実機確認が必要です。
 
 ## 5. 実行フロー
 
@@ -111,19 +111,19 @@ flowchart TD
 
 ### 6.1 現在の件数
 
-`public/data/content.json`の版は`1.2.0`です。
+`public/data/content.json`の版は`1.3.0`です。
 
 | 種別 | 件数 |
 |---|---:|
 | 小学校復習単語 | 12 |
-| 中学1年単語 | 100 |
-| 単語合計 | 112 |
+| 中学1年単語 | 102 |
+| 単語合計 | 114 |
 | 熟語・定型表現 | 12 |
 | 文法単元 | 10 |
-| 明示問題 | 430 |
-| リスニング問題 | 112 |
+| 明示問題 | 438 |
+| リスニング問題 | 114 |
 
-問題形式の内訳は、`en_to_ja_choice` 98問、`ja_to_en_choice` 98問、`spelling` 96問、`fill_blank` 10問、`word_order` 10問、`conversation_choice` 6問、`listening_choice` 112問です。追加88語はそれぞれ意味、日本語→英語、スペル入力、リスニングの4形式を持ちます。リスニング問題は表示用プロンプトに英語の正解を出さず、読み上げ用の`audioText`を持ちます。全問が`hint`、`explanation`、`difficulty`を持ちます。
+問題形式の内訳は、`en_to_ja_choice` 100問、`ja_to_en_choice` 100問、`spelling` 98問、`fill_blank` 10問、`word_order` 10問、`conversation_choice` 6問、`listening_choice` 114問です。追加90語はそれぞれ意味、日本語→英語、スペル入力、リスニングの4形式を持ちます。日本語→英語とスペル入力では日本語例文を表示し、`see`、`look`、`watch`は場面別の意味、共通の比較選択肢、使い分けヒントを持ちます。リスニング問題は表示用プロンプトに英語の正解を出さず、読み上げ用の`audioText`を持ちます。全問が`hint`、`explanation`、`difficulty`を持ちます。
 
 今日のクエストは`word`、`grammar`、`listening`、`mixed`の4カテゴリです。個別カテゴリは他カテゴリを混ぜず、問題数が足りない場合は同じカテゴリ内で復習サイクルを作ります。`mixed`は出題数のおよそ25%をリスニングにし、残りを非リスニング問題から選びます。
 
@@ -248,7 +248,7 @@ IndexedDBには次の6ストアがあります。
 - 読み上げ: 端末のSpeech Synthesis、既定`en-US`
 - 設定保存: `wordQuest.audio.settings.v1`
 
-112問の`listening_choice`は明示的な`audioText`を読み上げます。`question-audio.js`は、ほかの形式では単語、空欄を埋めた完成文、語順問題の正答文、会話の質問文を解決します。
+114問の`listening_choice`は明示的な`audioText`を読み上げます。`question-audio.js`は、ほかの形式では単語、空欄を埋めた完成文、語順問題の正答文、会話の質問文を解決します。
 
 ブラウザは自動再生を制限するため、最初のタップで`unlockAudio()`を呼びます。自動テストはSpeech Synthesisを模擬し、渡す英文、`en-US`、英語音声の選択を確認しますが、音そのものは評価できません。本体音量、消音モード、自動再生制限、端末に入っている声、発音品質、BGM／効果音との音量バランスはAndroid ChromeとiPhone Safariで耳で確認する必要があります。
 
@@ -293,7 +293,7 @@ registerCapacitorLocalNotifications(LocalNotifications);
 
 ### 11.2 Service Worker
 
-`sw.js`のキャッシュ版は`word-quest-v3`です。インストール時にHTML、manifest、SVG／192px／512pxアイコン、背景、コンテンツを取得し、ビルド済みHTMLからハッシュ付きJS／CSSを見つけてキャッシュします。Service Worker自身の位置からスコープを求めるため、`/word-quest-jhs1/`配下でも相対パスで動作します。
+`sw.js`のキャッシュ版は`word-quest-v4`です。インストール時にHTML、manifest、SVG／192px／512pxアイコン、背景、コンテンツを取得し、ビルド済みHTMLからハッシュ付きJS／CSSを見つけてキャッシュします。Service Worker自身の位置からスコープを求めるため、`/word-quest-jhs1/`配下でも相対パスで動作します。
 
 - ページ遷移: ネットワーク優先、失敗時にキャッシュ
 - 同一オリジンの静的GET: stale-while-revalidate
@@ -421,7 +421,7 @@ npm run test:e2e
 - Web Audio／読み上げと設定画面の接続
 - Web通知／アプリ内通知、PWAインストール案内、Service Worker登録
 - PIN付き閲覧専用保護者レポート、Web Share、バックアップ／復元、初期化UI
-- `npm test`: 21件成功、失敗0件
+- `npm test`: 22件成功、失敗0件
 - `VITE_BASE_PATH=/word-quest-jhs1/`のVite 8.1.5ビルドに成功
 - Chrome E2Eで今日のクエスト4カテゴリを確認し、全部ミックスにリスニングと非リスニングが含まれることを検証
 - 英単語ステージ全12問で、単語以外とリスニング専用問題が混入しないことを検証
@@ -434,7 +434,7 @@ npm run test:e2e
 - Console Error／Page Errorは0件
 - モバイル4画面とデスクトップ初回画面のスクリーンショットを目視確認
 - `VITE_BASE_PATH`と`gh-pages`ブランチによるPages公開経路を実装
-- GitHub PagesのHTTPS URLで200応答、サブパス資産、コンテンツ版`1.2.0`を確認
+- GitHub PagesのHTTPS URLで200応答、サブパス資産、コンテンツ版`1.3.0`を確認
 - 公開URLのChrome E2Eで学習、保存、バックアップ、Service Worker、強制オフライン再読込、エラー0件を確認
 
 ### 残る実機確認
