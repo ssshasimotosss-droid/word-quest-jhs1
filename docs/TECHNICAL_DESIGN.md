@@ -293,7 +293,7 @@ registerCapacitorLocalNotifications(LocalNotifications);
 
 ### 11.2 Service Worker
 
-`sw.js`のキャッシュ版は`word-quest-v2`です。インストール時にHTML、manifest、SVG／192px／512pxアイコン、背景、コンテンツを取得し、ビルド済みHTMLからハッシュ付きJS／CSSを見つけてキャッシュします。Service Worker自身の位置からスコープを求めるため、`/word-quest-jhs1/`配下でも相対パスで動作します。
+`sw.js`のキャッシュ版は`word-quest-v3`です。インストール時にHTML、manifest、SVG／192px／512pxアイコン、背景、コンテンツを取得し、ビルド済みHTMLからハッシュ付きJS／CSSを見つけてキャッシュします。Service Worker自身の位置からスコープを求めるため、`/word-quest-jhs1/`配下でも相対パスで動作します。
 
 - ページ遷移: ネットワーク優先、失敗時にキャッシュ
 - 同一オリジンの静的GET: stale-while-revalidate
