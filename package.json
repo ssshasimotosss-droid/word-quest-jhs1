@@ -9,6 +9,7 @@
     "build": "vite build",
     "build:pages": "VITE_BASE_PATH=/word-quest-jhs1/ vite build",
     "preview": "vite preview --host 0.0.0.0",
+    "content:expand:jhs1": "node scripts/expand-jhs1-vocabulary.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "node tests/e2e.mjs",
     "check": "npm run test && npm run build",

@@ -50,15 +50,29 @@ test('content bundle is versioned and meets the requested minimum counts', () =>
   assert.ok(content.metadata.license.length > 0);
   assert.ok(content.metadata.licenseNote.length > 0);
 
-  assert.ok(content.words.length >= 20, 'at least 20 words are required');
+  assert.ok(content.words.length >= 112, 'at least 112 words are required');
   assert.ok(content.phrases.length >= 12, 'at least 12 phrases are required');
   assert.ok(content.grammarUnits.length >= 10, 'at least 10 grammar units are required');
-  assert.ok(content.questions.length >= 50, 'at least 50 explicit questions are required');
+  assert.ok(content.questions.length >= 430, 'at least 430 explicit questions are required');
 
   const elementaryWords = content.words.filter((word) => word.grade === 'elementary');
   const jhs1Words = content.words.filter((word) => word.grade === 'jhs1');
   assert.ok(elementaryWords.length > 0, 'elementary words are required');
-  assert.ok(jhs1Words.length > 0, 'jhs1 words are required');
+  assert.ok(jhs1Words.length >= 100, 'at least 100 jhs1 words are required');
+
+  const expandedWordQuestions = content.questions.filter(({ id }) => id.startsWith('question_jhs1_'));
+  assert.equal(expandedWordQuestions.length, 352, '88 added words need four questions each');
+  const expectedTypes = new Set(['en_to_ja_choice', 'ja_to_en_choice', 'spelling', 'listening_choice']);
+  for (const word of jhs1Words.filter(({ id }) => id.startsWith('word_jhs1_') && ![
+    'word_jhs1_study', 'word_jhs1_speak', 'word_jhs1_library', 'word_jhs1_subject',
+    'word_jhs1_favorite', 'word_jhs1_usually', 'word_jhs1_practice', 'word_jhs1_homework',
+    'word_jhs1_interesting', 'word_jhs1_difficult', 'word_jhs1_visit', 'word_jhs1_help',
+  ].includes(id))) {
+    const types = new Set(expandedWordQuestions
+      .filter(({ contentId }) => contentId === word.id)
+      .map(({ questionType }) => questionType));
+    assert.deepEqual(types, expectedTypes, `${word.id} needs meaning, production, spelling, and listening`);
+  }
 });
 
 test('JSON Schema declares the same content sections and minimums', () => {
@@ -67,10 +81,10 @@ test('JSON Schema declares the same content sections and minimums', () => {
     new Set(schema.required),
     new Set(['contentVersion', 'metadata', 'words', 'phrases', 'grammarUnits', 'questions']),
   );
-  assert.equal(schema.properties.words.minItems, 20);
+  assert.equal(schema.properties.words.minItems, 112);
   assert.equal(schema.properties.phrases.minItems, 12);
   assert.equal(schema.properties.grammarUnits.minItems, 10);
-  assert.equal(schema.properties.questions.minItems, 50);
+  assert.equal(schema.properties.questions.minItems, 430);
 });
 
 test('content IDs are valid and unique, including across content collections', () => {
