@@ -1,5 +1,5 @@
 {
-  "contentVersion": "1.2.0",
+  "contentVersion": "1.3.0",
   "metadata": {
     "title": "WORD QUEST サンプル学習データ",
     "locale": "ja-JP",
@@ -2564,11 +2564,63 @@
       "isActive": true
     },
     {
+      "id": "word_jhs1_see",
+      "lemma": "see",
+      "displayForm": "see",
+      "meaningsJa": [
+        "自然に見える・目に入る"
+      ],
+      "partOfSpeech": "verb",
+      "grade": "jhs1",
+      "stage": 10,
+      "difficulty": 4,
+      "forms": {
+        "plural": null,
+        "thirdPersonSingular": "sees",
+        "past": "saw",
+        "pastParticiple": "seen",
+        "ing": "seeing"
+      },
+      "example": {
+        "en": "I can see a bird in the tree.",
+        "ja": "木に鳥が見えます。"
+      },
+      "source": "original",
+      "license": "Original-Project-Content",
+      "isActive": true
+    },
+    {
+      "id": "word_jhs1_look",
+      "lemma": "look",
+      "displayForm": "look",
+      "meaningsJa": [
+        "目を向けて見る"
+      ],
+      "partOfSpeech": "verb",
+      "grade": "jhs1",
+      "stage": 10,
+      "difficulty": 4,
+      "forms": {
+        "plural": null,
+        "thirdPersonSingular": "looks",
+        "past": "looked",
+        "pastParticiple": "looked",
+        "ing": "looking"
+      },
+      "example": {
+        "en": "Look at this picture.",
+        "ja": "この写真を見てください。"
+      },
+      "source": "original",
+      "license": "Original-Project-Content",
+      "isActive": true
+    },
+    {
       "id": "word_jhs1_watch",
       "lemma": "watch",
       "displayForm": "watch",
       "meaningsJa": [
-        "見る"
+        "テレビ・動画などを見る"
       ],
       "partOfSpeech": "verb",
       "grade": "jhs1",
@@ -2582,8 +2634,8 @@
         "ing": "watching"
       },
       "example": {
-        "en": "We watch a movie at home.",
-        "ja": "私たちは家で映画を見ます。"
+        "en": "We watch TV after dinner.",
+        "ja": "私たちは夕食後にテレビを見ます。"
       },
       "source": "original",
       "license": "Original-Project-Content",
@@ -2598,7 +2650,7 @@
       ],
       "partOfSpeech": "verb",
       "grade": "jhs1",
-      "stage": 10,
+      "stage": 11,
       "difficulty": 4,
       "forms": {
         "plural": null,
@@ -2624,7 +2676,7 @@
       ],
       "partOfSpeech": "verb",
       "grade": "jhs1",
-      "stage": 10,
+      "stage": 11,
       "difficulty": 4,
       "forms": {
         "plural": null,
@@ -2884,7 +2936,7 @@
       ],
       "partOfSpeech": "verb",
       "grade": "jhs1",
-      "stage": 11,
+      "stage": 12,
       "difficulty": 4,
       "forms": {
         "plural": null,
@@ -2910,7 +2962,7 @@
       ],
       "partOfSpeech": "verb",
       "grade": "jhs1",
-      "stage": 11,
+      "stage": 12,
       "difficulty": 4,
       "forms": {
         "plural": null,
@@ -4613,7 +4665,7 @@
       ],
       "correctAnswer": "生徒",
       "hint": "最初の文字は S です。",
-      "explanation": "student は「生徒」という意味です。",
+      "explanation": "student は「生徒」という意味です。例文: I am a junior high school student.",
       "difficulty": 2
     },
     {
@@ -4621,7 +4673,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_student",
       "questionType": "ja_to_en_choice",
-      "prompt": "「生徒」を英語で選ぼう。",
+      "prompt": "例文「私は中学生です。」で使う「生徒」の英単語は？",
       "choices": [
         "student",
         "math",
@@ -4630,7 +4682,7 @@
       ],
       "correctAnswer": "student",
       "hint": "最初の文字は S です。",
-      "explanation": "「生徒」は student といいます。",
+      "explanation": "この場面では student を使います。I am a junior high school student.",
       "difficulty": 2
     },
     {
@@ -4638,11 +4690,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_student",
       "questionType": "spelling",
-      "prompt": "「生徒」を英語で入力しよう。",
+      "prompt": "例文「私は中学生です。」の「生徒」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "student",
       "hint": "最初の文字は S です。",
-      "explanation": "student のつづりを完成させよう。",
+      "explanation": "student のつづりを完成させよう。I am a junior high school student.",
       "difficulty": 3
     },
     {
@@ -4677,7 +4729,7 @@
       ],
       "correctAnswer": "先生",
       "hint": "最初の文字は T です。",
-      "explanation": "teacher は「先生」という意味です。",
+      "explanation": "teacher は「先生」という意味です。例文: Our teacher is kind.",
       "difficulty": 2
     },
     {
@@ -4685,7 +4737,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_teacher",
       "questionType": "ja_to_en_choice",
-      "prompt": "「先生」を英語で選ぼう。",
+      "prompt": "例文「私たちの先生は親切です。」で使う「先生」の英単語は？",
       "choices": [
         "teacher",
         "history",
@@ -4694,7 +4746,7 @@
       ],
       "correctAnswer": "teacher",
       "hint": "最初の文字は T です。",
-      "explanation": "「先生」は teacher といいます。",
+      "explanation": "この場面では teacher を使います。Our teacher is kind.",
       "difficulty": 2
     },
     {
@@ -4702,11 +4754,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_teacher",
       "questionType": "spelling",
-      "prompt": "「先生」を英語で入力しよう。",
+      "prompt": "例文「私たちの先生は親切です。」の「先生」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "teacher",
       "hint": "最初の文字は T です。",
-      "explanation": "teacher のつづりを完成させよう。",
+      "explanation": "teacher のつづりを完成させよう。Our teacher is kind.",
       "difficulty": 3
     },
     {
@@ -4741,7 +4793,7 @@
       ],
       "correctAnswer": "授業",
       "hint": "最初の文字は C です。",
-      "explanation": "class は「授業」という意味です。",
+      "explanation": "class は「授業」という意味です。例文: English class starts at nine.",
       "difficulty": 2
     },
     {
@@ -4749,7 +4801,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_class",
       "questionType": "ja_to_en_choice",
-      "prompt": "「授業」を英語で選ぼう。",
+      "prompt": "例文「英語の授業は9時に始まります。」で使う「授業」の英単語は？",
       "choices": [
         "class",
         "art",
@@ -4758,7 +4810,7 @@
       ],
       "correctAnswer": "class",
       "hint": "最初の文字は C です。",
-      "explanation": "「授業」は class といいます。",
+      "explanation": "この場面では class を使います。English class starts at nine.",
       "difficulty": 2
     },
     {
@@ -4766,11 +4818,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_class",
       "questionType": "spelling",
-      "prompt": "「授業」を英語で入力しよう。",
+      "prompt": "例文「英語の授業は9時に始まります。」の「授業」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "class",
       "hint": "最初の文字は C です。",
-      "explanation": "class のつづりを完成させよう。",
+      "explanation": "class のつづりを完成させよう。English class starts at nine.",
       "difficulty": 3
     },
     {
@@ -4805,7 +4857,7 @@
       ],
       "correctAnswer": "教室",
       "hint": "最初の文字は C です。",
-      "explanation": "classroom は「教室」という意味です。",
+      "explanation": "classroom は「教室」という意味です。例文: Our classroom is bright.",
       "difficulty": 2
     },
     {
@@ -4813,7 +4865,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_classroom",
       "questionType": "ja_to_en_choice",
-      "prompt": "「教室」を英語で選ぼう。",
+      "prompt": "例文「私たちの教室は明るいです。」で使う「教室」の英単語は？",
       "choices": [
         "classroom",
         "lunch",
@@ -4822,7 +4874,7 @@
       ],
       "correctAnswer": "classroom",
       "hint": "最初の文字は C です。",
-      "explanation": "「教室」は classroom といいます。",
+      "explanation": "この場面では classroom を使います。Our classroom is bright.",
       "difficulty": 2
     },
     {
@@ -4830,11 +4882,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_classroom",
       "questionType": "spelling",
-      "prompt": "「教室」を英語で入力しよう。",
+      "prompt": "例文「私たちの教室は明るいです。」の「教室」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "classroom",
       "hint": "最初の文字は C です。",
-      "explanation": "classroom のつづりを完成させよう。",
+      "explanation": "classroom のつづりを完成させよう。Our classroom is bright.",
       "difficulty": 3
     },
     {
@@ -4869,7 +4921,7 @@
       ],
       "correctAnswer": "机",
       "hint": "最初の文字は D です。",
-      "explanation": "desk は「机」という意味です。",
+      "explanation": "desk は「机」という意味です。例文: My bag is under the desk.",
       "difficulty": 2
     },
     {
@@ -4877,7 +4929,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_desk",
       "questionType": "ja_to_en_choice",
-      "prompt": "「机」を英語で選ぼう。",
+      "prompt": "例文「私のかばんは机の下です。」で使う「机」の英単語は？",
       "choices": [
         "desk",
         "breakfast",
@@ -4886,7 +4938,7 @@
       ],
       "correctAnswer": "desk",
       "hint": "最初の文字は D です。",
-      "explanation": "「机」は desk といいます。",
+      "explanation": "この場面では desk を使います。My bag is under the desk.",
       "difficulty": 2
     },
     {
@@ -4894,11 +4946,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_desk",
       "questionType": "spelling",
-      "prompt": "「机」を英語で入力しよう。",
+      "prompt": "例文「私のかばんは机の下です。」の「机」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "desk",
       "hint": "最初の文字は D です。",
-      "explanation": "desk のつづりを完成させよう。",
+      "explanation": "desk のつづりを完成させよう。My bag is under the desk.",
       "difficulty": 3
     },
     {
@@ -4933,7 +4985,7 @@
       ],
       "correctAnswer": "ノート",
       "hint": "最初の文字は N です。",
-      "explanation": "notebook は「ノート」という意味です。",
+      "explanation": "notebook は「ノート」という意味です。例文: This is my English notebook.",
       "difficulty": 2
     },
     {
@@ -4941,7 +4993,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_notebook",
       "questionType": "ja_to_en_choice",
-      "prompt": "「ノート」を英語で選ぼう。",
+      "prompt": "例文「これは私の英語ノートです。」で使う「ノート」の英単語は？",
       "choices": [
         "notebook",
         "dinner",
@@ -4950,7 +5002,7 @@
       ],
       "correctAnswer": "notebook",
       "hint": "最初の文字は N です。",
-      "explanation": "「ノート」は notebook といいます。",
+      "explanation": "この場面では notebook を使います。This is my English notebook.",
       "difficulty": 2
     },
     {
@@ -4958,11 +5010,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_notebook",
       "questionType": "spelling",
-      "prompt": "「ノート」を英語で入力しよう。",
+      "prompt": "例文「これは私の英語ノートです。」の「ノート」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "notebook",
       "hint": "最初の文字は N です。",
-      "explanation": "notebook のつづりを完成させよう。",
+      "explanation": "notebook のつづりを完成させよう。This is my English notebook.",
       "difficulty": 3
     },
     {
@@ -4997,7 +5049,7 @@
       ],
       "correctAnswer": "えんぴつ",
       "hint": "最初の文字は P です。",
-      "explanation": "pencil は「えんぴつ」という意味です。",
+      "explanation": "pencil は「えんぴつ」という意味です。例文: I need a new pencil.",
       "difficulty": 2
     },
     {
@@ -5005,7 +5057,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_pencil",
       "questionType": "ja_to_en_choice",
-      "prompt": "「えんぴつ」を英語で選ぼう。",
+      "prompt": "例文「私は新しいえんぴつが必要です。」で使う「えんぴつ」の英単語は？",
       "choices": [
         "pencil",
         "family",
@@ -5014,7 +5066,7 @@
       ],
       "correctAnswer": "pencil",
       "hint": "最初の文字は P です。",
-      "explanation": "「えんぴつ」は pencil といいます。",
+      "explanation": "この場面では pencil を使います。I need a new pencil.",
       "difficulty": 2
     },
     {
@@ -5022,11 +5074,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_pencil",
       "questionType": "spelling",
-      "prompt": "「えんぴつ」を英語で入力しよう。",
+      "prompt": "例文「私は新しいえんぴつが必要です。」の「えんぴつ」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "pencil",
       "hint": "最初の文字は P です。",
-      "explanation": "pencil のつづりを完成させよう。",
+      "explanation": "pencil のつづりを完成させよう。I need a new pencil.",
       "difficulty": 3
     },
     {
@@ -5061,7 +5113,7 @@
       ],
       "correctAnswer": "質問",
       "hint": "最初の文字は Q です。",
-      "explanation": "question は「質問」という意味です。",
+      "explanation": "question は「質問」という意味です。例文: I have a question.",
       "difficulty": 2
     },
     {
@@ -5069,7 +5121,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_question",
       "questionType": "ja_to_en_choice",
-      "prompt": "「質問」を英語で選ぼう。",
+      "prompt": "例文「私は質問があります。」で使う「質問」の英単語は？",
       "choices": [
         "question",
         "mother",
@@ -5078,7 +5130,7 @@
       ],
       "correctAnswer": "question",
       "hint": "最初の文字は Q です。",
-      "explanation": "「質問」は question といいます。",
+      "explanation": "この場面では question を使います。I have a question.",
       "difficulty": 2
     },
     {
@@ -5086,11 +5138,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_question",
       "questionType": "spelling",
-      "prompt": "「質問」を英語で入力しよう。",
+      "prompt": "例文「私は質問があります。」の「質問」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "question",
       "hint": "最初の文字は Q です。",
-      "explanation": "question のつづりを完成させよう。",
+      "explanation": "question のつづりを完成させよう。I have a question.",
       "difficulty": 3
     },
     {
@@ -5125,7 +5177,7 @@
       ],
       "correctAnswer": "答え",
       "hint": "最初の文字は A です。",
-      "explanation": "answer は「答え」という意味です。",
+      "explanation": "answer は「答え」という意味です。例文: Write your answer here.",
       "difficulty": 2
     },
     {
@@ -5133,7 +5185,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_answer",
       "questionType": "ja_to_en_choice",
-      "prompt": "「答え」を英語で選ぼう。",
+      "prompt": "例文「ここに答えを書きましょう。」で使う「答え」の英単語は？",
       "choices": [
         "answer",
         "father",
@@ -5142,7 +5194,7 @@
       ],
       "correctAnswer": "answer",
       "hint": "最初の文字は A です。",
-      "explanation": "「答え」は answer といいます。",
+      "explanation": "この場面では answer を使います。Write your answer here.",
       "difficulty": 2
     },
     {
@@ -5150,11 +5202,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_answer",
       "questionType": "spelling",
-      "prompt": "「答え」を英語で入力しよう。",
+      "prompt": "例文「ここに答えを書きましょう。」の「答え」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "answer",
       "hint": "最初の文字は A です。",
-      "explanation": "answer のつづりを完成させよう。",
+      "explanation": "answer のつづりを完成させよう。Write your answer here.",
       "difficulty": 3
     },
     {
@@ -5189,7 +5241,7 @@
       ],
       "correctAnswer": "言語",
       "hint": "最初の文字は L です。",
-      "explanation": "language は「言語」という意味です。",
+      "explanation": "language は「言語」という意味です。例文: English is an important language.",
       "difficulty": 2
     },
     {
@@ -5197,7 +5249,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_language",
       "questionType": "ja_to_en_choice",
-      "prompt": "「言語」を英語で選ぼう。",
+      "prompt": "例文「英語は大切な言語です。」で使う「言語」の英単語は？",
       "choices": [
         "language",
         "brother",
@@ -5206,7 +5258,7 @@
       ],
       "correctAnswer": "language",
       "hint": "最初の文字は L です。",
-      "explanation": "「言語」は language といいます。",
+      "explanation": "この場面では language を使います。English is an important language.",
       "difficulty": 2
     },
     {
@@ -5214,11 +5266,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_language",
       "questionType": "spelling",
-      "prompt": "「言語」を英語で入力しよう。",
+      "prompt": "例文「英語は大切な言語です。」の「言語」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "language",
       "hint": "最初の文字は L です。",
-      "explanation": "language のつづりを完成させよう。",
+      "explanation": "language のつづりを完成させよう。English is an important language.",
       "difficulty": 3
     },
     {
@@ -5253,7 +5305,7 @@
       ],
       "correctAnswer": "英語",
       "hint": "最初の文字は E です。",
-      "explanation": "English は「英語」という意味です。",
+      "explanation": "English は「英語」という意味です。例文: I enjoy English.",
       "difficulty": 2
     },
     {
@@ -5261,7 +5313,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_english",
       "questionType": "ja_to_en_choice",
-      "prompt": "「英語」を英語で選ぼう。",
+      "prompt": "例文「私は英語を楽しんでいます。」で使う「英語」の英単語は？",
       "choices": [
         "English",
         "sister",
@@ -5270,7 +5322,7 @@
       ],
       "correctAnswer": "English",
       "hint": "最初の文字は E です。",
-      "explanation": "「英語」は English といいます。",
+      "explanation": "この場面では English を使います。I enjoy English.",
       "difficulty": 2
     },
     {
@@ -5278,11 +5330,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_english",
       "questionType": "spelling",
-      "prompt": "「英語」を英語で入力しよう。",
+      "prompt": "例文「私は英語を楽しんでいます。」の「英語」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "English",
       "hint": "最初の文字は E です。",
-      "explanation": "English のつづりを完成させよう。",
+      "explanation": "English のつづりを完成させよう。I enjoy English.",
       "difficulty": 3
     },
     {
@@ -5317,7 +5369,7 @@
       ],
       "correctAnswer": "日本語",
       "hint": "最初の文字は J です。",
-      "explanation": "Japanese は「日本語」という意味です。",
+      "explanation": "Japanese は「日本語」という意味です。例文: She speaks Japanese.",
       "difficulty": 2
     },
     {
@@ -5325,7 +5377,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_japanese",
       "questionType": "ja_to_en_choice",
-      "prompt": "「日本語」を英語で選ぼう。",
+      "prompt": "例文「彼女は日本語を話します。」で使う「日本語」の英単語は？",
       "choices": [
         "Japanese",
         "grandfather",
@@ -5334,7 +5386,7 @@
       ],
       "correctAnswer": "Japanese",
       "hint": "最初の文字は J です。",
-      "explanation": "「日本語」は Japanese といいます。",
+      "explanation": "この場面では Japanese を使います。She speaks Japanese.",
       "difficulty": 2
     },
     {
@@ -5342,11 +5394,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_japanese",
       "questionType": "spelling",
-      "prompt": "「日本語」を英語で入力しよう。",
+      "prompt": "例文「彼女は日本語を話します。」の「日本語」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "Japanese",
       "hint": "最初の文字は J です。",
-      "explanation": "Japanese のつづりを完成させよう。",
+      "explanation": "Japanese のつづりを完成させよう。She speaks Japanese.",
       "difficulty": 3
     },
     {
@@ -5381,7 +5433,7 @@
       ],
       "correctAnswer": "理科",
       "hint": "最初の文字は S です。",
-      "explanation": "science は「理科」という意味です。",
+      "explanation": "science は「理科」という意味です。例文: Science is fun.",
       "difficulty": 2
     },
     {
@@ -5389,7 +5441,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_science",
       "questionType": "ja_to_en_choice",
-      "prompt": "「理科」を英語で選ぼう。",
+      "prompt": "例文「理科は楽しいです。」で使う「理科」の英単語は？",
       "choices": [
         "science",
         "grandmother",
@@ -5398,7 +5450,7 @@
       ],
       "correctAnswer": "science",
       "hint": "最初の文字は S です。",
-      "explanation": "「理科」は science といいます。",
+      "explanation": "この場面では science を使います。Science is fun.",
       "difficulty": 2
     },
     {
@@ -5406,11 +5458,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_science",
       "questionType": "spelling",
-      "prompt": "「理科」を英語で入力しよう。",
+      "prompt": "例文「理科は楽しいです。」の「理科」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "science",
       "hint": "最初の文字は S です。",
-      "explanation": "science のつづりを完成させよう。",
+      "explanation": "science のつづりを完成させよう。Science is fun.",
       "difficulty": 3
     },
     {
@@ -5445,7 +5497,7 @@
       ],
       "correctAnswer": "数学",
       "hint": "最初の文字は M です。",
-      "explanation": "math は「数学」という意味です。",
+      "explanation": "math は「数学」という意味です。例文: Math is my favorite subject.",
       "difficulty": 2
     },
     {
@@ -5453,7 +5505,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_math",
       "questionType": "ja_to_en_choice",
-      "prompt": "「数学」を英語で選ぼう。",
+      "prompt": "例文「数学は私の一番好きな教科です。」で使う「数学」の英単語は？",
       "choices": [
         "math",
         "people",
@@ -5462,7 +5514,7 @@
       ],
       "correctAnswer": "math",
       "hint": "最初の文字は M です。",
-      "explanation": "「数学」は math といいます。",
+      "explanation": "この場面では math を使います。Math is my favorite subject.",
       "difficulty": 2
     },
     {
@@ -5470,11 +5522,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_math",
       "questionType": "spelling",
-      "prompt": "「数学」を英語で入力しよう。",
+      "prompt": "例文「数学は私の一番好きな教科です。」の「数学」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "math",
       "hint": "最初の文字は M です。",
-      "explanation": "math のつづりを完成させよう。",
+      "explanation": "math のつづりを完成させよう。Math is my favorite subject.",
       "difficulty": 3
     },
     {
@@ -5509,7 +5561,7 @@
       ],
       "correctAnswer": "歴史",
       "hint": "最初の文字は H です。",
-      "explanation": "history は「歴史」という意味です。",
+      "explanation": "history は「歴史」という意味です。例文: We study history at school.",
       "difficulty": 2
     },
     {
@@ -5517,7 +5569,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_history",
       "questionType": "ja_to_en_choice",
-      "prompt": "「歴史」を英語で選ぼう。",
+      "prompt": "例文「私たちは学校で歴史を勉強します。」で使う「歴史」の英単語は？",
       "choices": [
         "history",
         "boy",
@@ -5526,7 +5578,7 @@
       ],
       "correctAnswer": "history",
       "hint": "最初の文字は H です。",
-      "explanation": "「歴史」は history といいます。",
+      "explanation": "この場面では history を使います。We study history at school.",
       "difficulty": 2
     },
     {
@@ -5534,11 +5586,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_history",
       "questionType": "spelling",
-      "prompt": "「歴史」を英語で入力しよう。",
+      "prompt": "例文「私たちは学校で歴史を勉強します。」の「歴史」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "history",
       "hint": "最初の文字は H です。",
-      "explanation": "history のつづりを完成させよう。",
+      "explanation": "history のつづりを完成させよう。We study history at school.",
       "difficulty": 3
     },
     {
@@ -5573,7 +5625,7 @@
       ],
       "correctAnswer": "美術",
       "hint": "最初の文字は A です。",
-      "explanation": "art は「美術」という意味です。",
+      "explanation": "art は「美術」という意味です。例文: I like art class.",
       "difficulty": 2
     },
     {
@@ -5581,7 +5633,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_art",
       "questionType": "ja_to_en_choice",
-      "prompt": "「美術」を英語で選ぼう。",
+      "prompt": "例文「私は美術の授業が好きです。」で使う「美術」の英単語は？",
       "choices": [
         "art",
         "girl",
@@ -5590,7 +5642,7 @@
       ],
       "correctAnswer": "art",
       "hint": "最初の文字は A です。",
-      "explanation": "「美術」は art といいます。",
+      "explanation": "この場面では art を使います。I like art class.",
       "difficulty": 2
     },
     {
@@ -5598,11 +5650,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_art",
       "questionType": "spelling",
-      "prompt": "「美術」を英語で入力しよう。",
+      "prompt": "例文「私は美術の授業が好きです。」の「美術」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "art",
       "hint": "最初の文字は A です。",
-      "explanation": "art のつづりを完成させよう。",
+      "explanation": "art のつづりを完成させよう。I like art class.",
       "difficulty": 3
     },
     {
@@ -5637,7 +5689,7 @@
       ],
       "correctAnswer": "昼食",
       "hint": "最初の文字は L です。",
-      "explanation": "lunch は「昼食」という意味です。",
+      "explanation": "lunch は「昼食」という意味です。例文: We eat lunch at school.",
       "difficulty": 2
     },
     {
@@ -5645,7 +5697,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_lunch",
       "questionType": "ja_to_en_choice",
-      "prompt": "「昼食」を英語で選ぼう。",
+      "prompt": "例文「私たちは学校で昼食を食べます。」で使う「昼食」の英単語は？",
       "choices": [
         "lunch",
         "city",
@@ -5654,7 +5706,7 @@
       ],
       "correctAnswer": "lunch",
       "hint": "最初の文字は L です。",
-      "explanation": "「昼食」は lunch といいます。",
+      "explanation": "この場面では lunch を使います。We eat lunch at school.",
       "difficulty": 2
     },
     {
@@ -5662,11 +5714,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_lunch",
       "questionType": "spelling",
-      "prompt": "「昼食」を英語で入力しよう。",
+      "prompt": "例文「私たちは学校で昼食を食べます。」の「昼食」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "lunch",
       "hint": "最初の文字は L です。",
-      "explanation": "lunch のつづりを完成させよう。",
+      "explanation": "lunch のつづりを完成させよう。We eat lunch at school.",
       "difficulty": 3
     },
     {
@@ -5701,7 +5753,7 @@
       ],
       "correctAnswer": "朝食",
       "hint": "最初の文字は B です。",
-      "explanation": "breakfast は「朝食」という意味です。",
+      "explanation": "breakfast は「朝食」という意味です。例文: I eat breakfast at seven.",
       "difficulty": 2
     },
     {
@@ -5709,7 +5761,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_breakfast",
       "questionType": "ja_to_en_choice",
-      "prompt": "「朝食」を英語で選ぼう。",
+      "prompt": "例文「私は7時に朝食を食べます。」で使う「朝食」の英単語は？",
       "choices": [
         "breakfast",
         "country",
@@ -5718,7 +5770,7 @@
       ],
       "correctAnswer": "breakfast",
       "hint": "最初の文字は B です。",
-      "explanation": "「朝食」は breakfast といいます。",
+      "explanation": "この場面では breakfast を使います。I eat breakfast at seven.",
       "difficulty": 2
     },
     {
@@ -5726,11 +5778,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_breakfast",
       "questionType": "spelling",
-      "prompt": "「朝食」を英語で入力しよう。",
+      "prompt": "例文「私は7時に朝食を食べます。」の「朝食」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "breakfast",
       "hint": "最初の文字は B です。",
-      "explanation": "breakfast のつづりを完成させよう。",
+      "explanation": "breakfast のつづりを完成させよう。I eat breakfast at seven.",
       "difficulty": 3
     },
     {
@@ -5765,7 +5817,7 @@
       ],
       "correctAnswer": "夕食",
       "hint": "最初の文字は D です。",
-      "explanation": "dinner は「夕食」という意味です。",
+      "explanation": "dinner は「夕食」という意味です。例文: Dinner is ready.",
       "difficulty": 2
     },
     {
@@ -5773,7 +5825,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_dinner",
       "questionType": "ja_to_en_choice",
-      "prompt": "「夕食」を英語で選ぼう。",
+      "prompt": "例文「夕食の準備ができました。」で使う「夕食」の英単語は？",
       "choices": [
         "dinner",
         "park",
@@ -5782,7 +5834,7 @@
       ],
       "correctAnswer": "dinner",
       "hint": "最初の文字は D です。",
-      "explanation": "「夕食」は dinner といいます。",
+      "explanation": "この場面では dinner を使います。Dinner is ready.",
       "difficulty": 2
     },
     {
@@ -5790,11 +5842,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_dinner",
       "questionType": "spelling",
-      "prompt": "「夕食」を英語で入力しよう。",
+      "prompt": "例文「夕食の準備ができました。」の「夕食」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "dinner",
       "hint": "最初の文字は D です。",
-      "explanation": "dinner のつづりを完成させよう。",
+      "explanation": "dinner のつづりを完成させよう。Dinner is ready.",
       "difficulty": 3
     },
     {
@@ -5829,7 +5881,7 @@
       ],
       "correctAnswer": "家族",
       "hint": "最初の文字は F です。",
-      "explanation": "family は「家族」という意味です。",
+      "explanation": "family は「家族」という意味です。例文: My family is happy.",
       "difficulty": 2
     },
     {
@@ -5837,7 +5889,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_family",
       "questionType": "ja_to_en_choice",
-      "prompt": "「家族」を英語で選ぼう。",
+      "prompt": "例文「私の家族は幸せです。」で使う「家族」の英単語は？",
       "choices": [
         "family",
         "station",
@@ -5846,7 +5898,7 @@
       ],
       "correctAnswer": "family",
       "hint": "最初の文字は F です。",
-      "explanation": "「家族」は family といいます。",
+      "explanation": "この場面では family を使います。My family is happy.",
       "difficulty": 2
     },
     {
@@ -5854,11 +5906,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_family",
       "questionType": "spelling",
-      "prompt": "「家族」を英語で入力しよう。",
+      "prompt": "例文「私の家族は幸せです。」の「家族」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "family",
       "hint": "最初の文字は F です。",
-      "explanation": "family のつづりを完成させよう。",
+      "explanation": "family のつづりを完成させよう。My family is happy.",
       "difficulty": 3
     },
     {
@@ -5893,7 +5945,7 @@
       ],
       "correctAnswer": "母",
       "hint": "最初の文字は M です。",
-      "explanation": "mother は「母」という意味です。",
+      "explanation": "mother は「母」という意味です。例文: My mother cooks dinner.",
       "difficulty": 2
     },
     {
@@ -5901,7 +5953,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_mother",
       "questionType": "ja_to_en_choice",
-      "prompt": "「母」を英語で選ぼう。",
+      "prompt": "例文「私の母は夕食を作ります。」で使う「母」の英単語は？",
       "choices": [
         "mother",
         "hospital",
@@ -5910,7 +5962,7 @@
       ],
       "correctAnswer": "mother",
       "hint": "最初の文字は M です。",
-      "explanation": "「母」は mother といいます。",
+      "explanation": "この場面では mother を使います。My mother cooks dinner.",
       "difficulty": 2
     },
     {
@@ -5918,11 +5970,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_mother",
       "questionType": "spelling",
-      "prompt": "「母」を英語で入力しよう。",
+      "prompt": "例文「私の母は夕食を作ります。」の「母」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "mother",
       "hint": "最初の文字は M です。",
-      "explanation": "mother のつづりを完成させよう。",
+      "explanation": "mother のつづりを完成させよう。My mother cooks dinner.",
       "difficulty": 3
     },
     {
@@ -5957,7 +6009,7 @@
       ],
       "correctAnswer": "父",
       "hint": "最初の文字は F です。",
-      "explanation": "father は「父」という意味です。",
+      "explanation": "father は「父」という意味です。例文: My father works in a hospital.",
       "difficulty": 2
     },
     {
@@ -5965,7 +6017,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_father",
       "questionType": "ja_to_en_choice",
-      "prompt": "「父」を英語で選ぼう。",
+      "prompt": "例文「私の父は病院で働いています。」で使う「父」の英単語は？",
       "choices": [
         "father",
         "store",
@@ -5974,7 +6026,7 @@
       ],
       "correctAnswer": "father",
       "hint": "最初の文字は F です。",
-      "explanation": "「父」は father といいます。",
+      "explanation": "この場面では father を使います。My father works in a hospital.",
       "difficulty": 2
     },
     {
@@ -5982,11 +6034,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_father",
       "questionType": "spelling",
-      "prompt": "「父」を英語で入力しよう。",
+      "prompt": "例文「私の父は病院で働いています。」の「父」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "father",
       "hint": "最初の文字は F です。",
-      "explanation": "father のつづりを完成させよう。",
+      "explanation": "father のつづりを完成させよう。My father works in a hospital.",
       "difficulty": 3
     },
     {
@@ -6021,7 +6073,7 @@
       ],
       "correctAnswer": "兄弟",
       "hint": "最初の文字は B です。",
-      "explanation": "brother は「兄弟」という意味です。",
+      "explanation": "brother は「兄弟」という意味です。例文: My brother likes soccer.",
       "difficulty": 3
     },
     {
@@ -6029,7 +6081,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_brother",
       "questionType": "ja_to_en_choice",
-      "prompt": "「兄弟」を英語で選ぼう。",
+      "prompt": "例文「私の兄弟はサッカーが好きです。」で使う「兄弟」の英単語は？",
       "choices": [
         "brother",
         "restaurant",
@@ -6038,7 +6090,7 @@
       ],
       "correctAnswer": "brother",
       "hint": "最初の文字は B です。",
-      "explanation": "「兄弟」は brother といいます。",
+      "explanation": "この場面では brother を使います。My brother likes soccer.",
       "difficulty": 3
     },
     {
@@ -6046,11 +6098,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_brother",
       "questionType": "spelling",
-      "prompt": "「兄弟」を英語で入力しよう。",
+      "prompt": "例文「私の兄弟はサッカーが好きです。」の「兄弟」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "brother",
       "hint": "最初の文字は B です。",
-      "explanation": "brother のつづりを完成させよう。",
+      "explanation": "brother のつづりを完成させよう。My brother likes soccer.",
       "difficulty": 4
     },
     {
@@ -6085,7 +6137,7 @@
       ],
       "correctAnswer": "姉妹",
       "hint": "最初の文字は S です。",
-      "explanation": "sister は「姉妹」という意味です。",
+      "explanation": "sister は「姉妹」という意味です。例文: My sister reads books.",
       "difficulty": 3
     },
     {
@@ -6093,7 +6145,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_sister",
       "questionType": "ja_to_en_choice",
-      "prompt": "「姉妹」を英語で選ぼう。",
+      "prompt": "例文「私の姉妹は本を読みます。」で使う「姉妹」の英単語は？",
       "choices": [
         "sister",
         "house",
@@ -6102,7 +6154,7 @@
       ],
       "correctAnswer": "sister",
       "hint": "最初の文字は S です。",
-      "explanation": "「姉妹」は sister といいます。",
+      "explanation": "この場面では sister を使います。My sister reads books.",
       "difficulty": 3
     },
     {
@@ -6110,11 +6162,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_sister",
       "questionType": "spelling",
-      "prompt": "「姉妹」を英語で入力しよう。",
+      "prompt": "例文「私の姉妹は本を読みます。」の「姉妹」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "sister",
       "hint": "最初の文字は S です。",
-      "explanation": "sister のつづりを完成させよう。",
+      "explanation": "sister のつづりを完成させよう。My sister reads books.",
       "difficulty": 4
     },
     {
@@ -6149,7 +6201,7 @@
       ],
       "correctAnswer": "祖父",
       "hint": "最初の文字は G です。",
-      "explanation": "grandfather は「祖父」という意味です。",
+      "explanation": "grandfather は「祖父」という意味です。例文: My grandfather is funny.",
       "difficulty": 3
     },
     {
@@ -6157,7 +6209,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_grandfather",
       "questionType": "ja_to_en_choice",
-      "prompt": "「祖父」を英語で選ぼう。",
+      "prompt": "例文「私の祖父はおもしろいです。」で使う「祖父」の英単語は？",
       "choices": [
         "grandfather",
         "room",
@@ -6166,7 +6218,7 @@
       ],
       "correctAnswer": "grandfather",
       "hint": "最初の文字は G です。",
-      "explanation": "「祖父」は grandfather といいます。",
+      "explanation": "この場面では grandfather を使います。My grandfather is funny.",
       "difficulty": 3
     },
     {
@@ -6174,11 +6226,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_grandfather",
       "questionType": "spelling",
-      "prompt": "「祖父」を英語で入力しよう。",
+      "prompt": "例文「私の祖父はおもしろいです。」の「祖父」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "grandfather",
       "hint": "最初の文字は G です。",
-      "explanation": "grandfather のつづりを完成させよう。",
+      "explanation": "grandfather のつづりを完成させよう。My grandfather is funny.",
       "difficulty": 4
     },
     {
@@ -6213,7 +6265,7 @@
       ],
       "correctAnswer": "祖母",
       "hint": "最初の文字は G です。",
-      "explanation": "grandmother は「祖母」という意味です。",
+      "explanation": "grandmother は「祖母」という意味です。例文: I visit my grandmother on Sunday.",
       "difficulty": 3
     },
     {
@@ -6221,7 +6273,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_grandmother",
       "questionType": "ja_to_en_choice",
-      "prompt": "「祖母」を英語で選ぼう。",
+      "prompt": "例文「私は日曜日に祖母を訪ねます。」で使う「祖母」の英単語は？",
       "choices": [
         "grandmother",
         "door",
@@ -6230,7 +6282,7 @@
       ],
       "correctAnswer": "grandmother",
       "hint": "最初の文字は G です。",
-      "explanation": "「祖母」は grandmother といいます。",
+      "explanation": "この場面では grandmother を使います。I visit my grandmother on Sunday.",
       "difficulty": 3
     },
     {
@@ -6238,11 +6290,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_grandmother",
       "questionType": "spelling",
-      "prompt": "「祖母」を英語で入力しよう。",
+      "prompt": "例文「私は日曜日に祖母を訪ねます。」の「祖母」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "grandmother",
       "hint": "最初の文字は G です。",
-      "explanation": "grandmother のつづりを完成させよう。",
+      "explanation": "grandmother のつづりを完成させよう。I visit my grandmother on Sunday.",
       "difficulty": 4
     },
     {
@@ -6277,7 +6329,7 @@
       ],
       "correctAnswer": "人々",
       "hint": "最初の文字は P です。",
-      "explanation": "people は「人々」という意味です。",
+      "explanation": "people は「人々」という意味です。例文: Many people are in the park.",
       "difficulty": 3
     },
     {
@@ -6285,7 +6337,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_people",
       "questionType": "ja_to_en_choice",
-      "prompt": "「人々」を英語で選ぼう。",
+      "prompt": "例文「たくさんの人々が公園にいます。」で使う「人々」の英単語は？",
       "choices": [
         "people",
         "window",
@@ -6294,7 +6346,7 @@
       ],
       "correctAnswer": "people",
       "hint": "最初の文字は P です。",
-      "explanation": "「人々」は people といいます。",
+      "explanation": "この場面では people を使います。Many people are in the park.",
       "difficulty": 3
     },
     {
@@ -6302,11 +6354,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_people",
       "questionType": "spelling",
-      "prompt": "「人々」を英語で入力しよう。",
+      "prompt": "例文「たくさんの人々が公園にいます。」の「人々」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "people",
       "hint": "最初の文字は P です。",
-      "explanation": "people のつづりを完成させよう。",
+      "explanation": "people のつづりを完成させよう。Many people are in the park.",
       "difficulty": 4
     },
     {
@@ -6341,7 +6393,7 @@
       ],
       "correctAnswer": "男の子",
       "hint": "最初の文字は B です。",
-      "explanation": "boy は「男の子」という意味です。",
+      "explanation": "boy は「男の子」という意味です。例文: That boy is my friend.",
       "difficulty": 3
     },
     {
@@ -6349,7 +6401,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_boy",
       "questionType": "ja_to_en_choice",
-      "prompt": "「男の子」を英語で選ぼう。",
+      "prompt": "例文「あの男の子は私の友達です。」で使う「男の子」の英単語は？",
       "choices": [
         "boy",
         "time",
@@ -6358,7 +6410,7 @@
       ],
       "correctAnswer": "boy",
       "hint": "最初の文字は B です。",
-      "explanation": "「男の子」は boy といいます。",
+      "explanation": "この場面では boy を使います。That boy is my friend.",
       "difficulty": 3
     },
     {
@@ -6366,11 +6418,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_boy",
       "questionType": "spelling",
-      "prompt": "「男の子」を英語で入力しよう。",
+      "prompt": "例文「あの男の子は私の友達です。」の「男の子」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "boy",
       "hint": "最初の文字は B です。",
-      "explanation": "boy のつづりを完成させよう。",
+      "explanation": "boy のつづりを完成させよう。That boy is my friend.",
       "difficulty": 4
     },
     {
@@ -6405,7 +6457,7 @@
       ],
       "correctAnswer": "女の子",
       "hint": "最初の文字は G です。",
-      "explanation": "girl は「女の子」という意味です。",
+      "explanation": "girl は「女の子」という意味です。例文: The girl has a blue bag.",
       "difficulty": 3
     },
     {
@@ -6413,7 +6465,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_girl",
       "questionType": "ja_to_en_choice",
-      "prompt": "「女の子」を英語で選ぼう。",
+      "prompt": "例文「その女の子は青いかばんを持っています。」で使う「女の子」の英単語は？",
       "choices": [
         "girl",
         "day",
@@ -6422,7 +6474,7 @@
       ],
       "correctAnswer": "girl",
       "hint": "最初の文字は G です。",
-      "explanation": "「女の子」は girl といいます。",
+      "explanation": "この場面では girl を使います。The girl has a blue bag.",
       "difficulty": 3
     },
     {
@@ -6430,11 +6482,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_girl",
       "questionType": "spelling",
-      "prompt": "「女の子」を英語で入力しよう。",
+      "prompt": "例文「その女の子は青いかばんを持っています。」の「女の子」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "girl",
       "hint": "最初の文字は G です。",
-      "explanation": "girl のつづりを完成させよう。",
+      "explanation": "girl のつづりを完成させよう。The girl has a blue bag.",
       "difficulty": 4
     },
     {
@@ -6469,7 +6521,7 @@
       ],
       "correctAnswer": "都市",
       "hint": "最初の文字は C です。",
-      "explanation": "city は「都市」という意味です。",
+      "explanation": "city は「都市」という意味です。例文: Tokyo is a big city.",
       "difficulty": 3
     },
     {
@@ -6477,7 +6529,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_city",
       "questionType": "ja_to_en_choice",
-      "prompt": "「都市」を英語で選ぼう。",
+      "prompt": "例文「東京は大きな都市です。」で使う「都市」の英単語は？",
       "choices": [
         "city",
         "week",
@@ -6486,7 +6538,7 @@
       ],
       "correctAnswer": "city",
       "hint": "最初の文字は C です。",
-      "explanation": "「都市」は city といいます。",
+      "explanation": "この場面では city を使います。Tokyo is a big city.",
       "difficulty": 3
     },
     {
@@ -6494,11 +6546,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_city",
       "questionType": "spelling",
-      "prompt": "「都市」を英語で入力しよう。",
+      "prompt": "例文「東京は大きな都市です。」の「都市」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "city",
       "hint": "最初の文字は C です。",
-      "explanation": "city のつづりを完成させよう。",
+      "explanation": "city のつづりを完成させよう。Tokyo is a big city.",
       "difficulty": 4
     },
     {
@@ -6533,7 +6585,7 @@
       ],
       "correctAnswer": "国",
       "hint": "最初の文字は C です。",
-      "explanation": "country は「国」という意味です。",
+      "explanation": "country は「国」という意味です。例文: Japan is a beautiful country.",
       "difficulty": 3
     },
     {
@@ -6541,7 +6593,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_country",
       "questionType": "ja_to_en_choice",
-      "prompt": "「国」を英語で選ぼう。",
+      "prompt": "例文「日本は美しい国です。」で使う「国」の英単語は？",
       "choices": [
         "country",
         "year",
@@ -6550,7 +6602,7 @@
       ],
       "correctAnswer": "country",
       "hint": "最初の文字は C です。",
-      "explanation": "「国」は country といいます。",
+      "explanation": "この場面では country を使います。Japan is a beautiful country.",
       "difficulty": 3
     },
     {
@@ -6558,11 +6610,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_country",
       "questionType": "spelling",
-      "prompt": "「国」を英語で入力しよう。",
+      "prompt": "例文「日本は美しい国です。」の「国」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "country",
       "hint": "最初の文字は C です。",
-      "explanation": "country のつづりを完成させよう。",
+      "explanation": "country のつづりを完成させよう。Japan is a beautiful country.",
       "difficulty": 4
     },
     {
@@ -6597,7 +6649,7 @@
       ],
       "correctAnswer": "公園",
       "hint": "最初の文字は P です。",
-      "explanation": "park は「公園」という意味です。",
+      "explanation": "park は「公園」という意味です。例文: We play in the park.",
       "difficulty": 3
     },
     {
@@ -6605,7 +6657,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_park",
       "questionType": "ja_to_en_choice",
-      "prompt": "「公園」を英語で選ぼう。",
+      "prompt": "例文「私たちは公園で遊びます。」で使う「公園」の英単語は？",
       "choices": [
         "park",
         "today",
@@ -6614,7 +6666,7 @@
       ],
       "correctAnswer": "park",
       "hint": "最初の文字は P です。",
-      "explanation": "「公園」は park といいます。",
+      "explanation": "この場面では park を使います。We play in the park.",
       "difficulty": 3
     },
     {
@@ -6622,11 +6674,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_park",
       "questionType": "spelling",
-      "prompt": "「公園」を英語で入力しよう。",
+      "prompt": "例文「私たちは公園で遊びます。」の「公園」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "park",
       "hint": "最初の文字は P です。",
-      "explanation": "park のつづりを完成させよう。",
+      "explanation": "park のつづりを完成させよう。We play in the park.",
       "difficulty": 4
     },
     {
@@ -6661,7 +6713,7 @@
       ],
       "correctAnswer": "駅",
       "hint": "最初の文字は S です。",
-      "explanation": "station は「駅」という意味です。",
+      "explanation": "station は「駅」という意味です。例文: The station is near here.",
       "difficulty": 3
     },
     {
@@ -6669,7 +6721,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_station",
       "questionType": "ja_to_en_choice",
-      "prompt": "「駅」を英語で選ぼう。",
+      "prompt": "例文「駅はここの近くです。」で使う「駅」の英単語は？",
       "choices": [
         "station",
         "tomorrow",
@@ -6678,7 +6730,7 @@
       ],
       "correctAnswer": "station",
       "hint": "最初の文字は S です。",
-      "explanation": "「駅」は station といいます。",
+      "explanation": "この場面では station を使います。The station is near here.",
       "difficulty": 3
     },
     {
@@ -6686,11 +6738,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_station",
       "questionType": "spelling",
-      "prompt": "「駅」を英語で入力しよう。",
+      "prompt": "例文「駅はここの近くです。」の「駅」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "station",
       "hint": "最初の文字は S です。",
-      "explanation": "station のつづりを完成させよう。",
+      "explanation": "station のつづりを完成させよう。The station is near here.",
       "difficulty": 4
     },
     {
@@ -6725,7 +6777,7 @@
       ],
       "correctAnswer": "病院",
       "hint": "最初の文字は H です。",
-      "explanation": "hospital は「病院」という意味です。",
+      "explanation": "hospital は「病院」という意味です。例文: The hospital is open today.",
       "difficulty": 3
     },
     {
@@ -6733,7 +6785,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_hospital",
       "questionType": "ja_to_en_choice",
-      "prompt": "「病院」を英語で選ぼう。",
+      "prompt": "例文「病院は今日開いています。」で使う「病院」の英単語は？",
       "choices": [
         "hospital",
         "yesterday",
@@ -6742,7 +6794,7 @@
       ],
       "correctAnswer": "hospital",
       "hint": "最初の文字は H です。",
-      "explanation": "「病院」は hospital といいます。",
+      "explanation": "この場面では hospital を使います。The hospital is open today.",
       "difficulty": 3
     },
     {
@@ -6750,11 +6802,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_hospital",
       "questionType": "spelling",
-      "prompt": "「病院」を英語で入力しよう。",
+      "prompt": "例文「病院は今日開いています。」の「病院」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "hospital",
       "hint": "最初の文字は H です。",
-      "explanation": "hospital のつづりを完成させよう。",
+      "explanation": "hospital のつづりを完成させよう。The hospital is open today.",
       "difficulty": 4
     },
     {
@@ -6789,7 +6841,7 @@
       ],
       "correctAnswer": "店",
       "hint": "最初の文字は S です。",
-      "explanation": "store は「店」という意味です。",
+      "explanation": "store は「店」という意味です。例文: That store sells books.",
       "difficulty": 3
     },
     {
@@ -6797,7 +6849,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_store",
       "questionType": "ja_to_en_choice",
-      "prompt": "「店」を英語で選ぼう。",
+      "prompt": "例文「あの店は本を売っています。」で使う「店」の英単語は？",
       "choices": [
         "store",
         "early",
@@ -6806,7 +6858,7 @@
       ],
       "correctAnswer": "store",
       "hint": "最初の文字は S です。",
-      "explanation": "「店」は store といいます。",
+      "explanation": "この場面では store を使います。That store sells books.",
       "difficulty": 3
     },
     {
@@ -6814,11 +6866,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_store",
       "questionType": "spelling",
-      "prompt": "「店」を英語で入力しよう。",
+      "prompt": "例文「あの店は本を売っています。」の「店」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "store",
       "hint": "最初の文字は S です。",
-      "explanation": "store のつづりを完成させよう。",
+      "explanation": "store のつづりを完成させよう。That store sells books.",
       "difficulty": 4
     },
     {
@@ -6849,11 +6901,11 @@
         "レストラン",
         "忙しい",
         "大好き",
-        "見る"
+        "自然に見える・目に入る"
       ],
       "correctAnswer": "レストラン",
       "hint": "最初の文字は R です。",
-      "explanation": "restaurant は「レストラン」という意味です。",
+      "explanation": "restaurant は「レストラン」という意味です。例文: This restaurant is popular.",
       "difficulty": 3
     },
     {
@@ -6861,16 +6913,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_restaurant",
       "questionType": "ja_to_en_choice",
-      "prompt": "「レストラン」を英語で選ぼう。",
+      "prompt": "例文「このレストランは人気があります。」で使う「レストラン」の英単語は？",
       "choices": [
         "restaurant",
         "busy",
         "love",
-        "watch"
+        "see"
       ],
       "correctAnswer": "restaurant",
       "hint": "最初の文字は R です。",
-      "explanation": "「レストラン」は restaurant といいます。",
+      "explanation": "この場面では restaurant を使います。This restaurant is popular.",
       "difficulty": 3
     },
     {
@@ -6878,11 +6930,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_restaurant",
       "questionType": "spelling",
-      "prompt": "「レストラン」を英語で入力しよう。",
+      "prompt": "例文「このレストランは人気があります。」の「レストラン」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "restaurant",
       "hint": "最初の文字は R です。",
-      "explanation": "restaurant のつづりを完成させよう。",
+      "explanation": "restaurant のつづりを完成させよう。This restaurant is popular.",
       "difficulty": 4
     },
     {
@@ -6896,7 +6948,7 @@
         "レストラン",
         "忙しい",
         "大好き",
-        "見る"
+        "自然に見える・目に入る"
       ],
       "correctAnswer": "レストラン",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -6913,11 +6965,11 @@
         "家",
         "親切な",
         "欲しい",
-        "聞く"
+        "目を向けて見る"
       ],
       "correctAnswer": "家",
       "hint": "最初の文字は H です。",
-      "explanation": "house は「家」という意味です。",
+      "explanation": "house は「家」という意味です。例文: Their house is near the school.",
       "difficulty": 3
     },
     {
@@ -6925,16 +6977,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_house",
       "questionType": "ja_to_en_choice",
-      "prompt": "「家」を英語で選ぼう。",
+      "prompt": "例文「彼らの家は学校の近くです。」で使う「家」の英単語は？",
       "choices": [
         "house",
         "kind",
         "want",
-        "listen"
+        "look"
       ],
       "correctAnswer": "house",
       "hint": "最初の文字は H です。",
-      "explanation": "「家」は house といいます。",
+      "explanation": "この場面では house を使います。Their house is near the school.",
       "difficulty": 3
     },
     {
@@ -6942,11 +6994,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_house",
       "questionType": "spelling",
-      "prompt": "「家」を英語で入力しよう。",
+      "prompt": "例文「彼らの家は学校の近くです。」の「家」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "house",
       "hint": "最初の文字は H です。",
-      "explanation": "house のつづりを完成させよう。",
+      "explanation": "house のつづりを完成させよう。Their house is near the school.",
       "difficulty": 4
     },
     {
@@ -6960,7 +7012,7 @@
         "家",
         "親切な",
         "欲しい",
-        "聞く"
+        "目を向けて見る"
       ],
       "correctAnswer": "家",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -6977,11 +7029,11 @@
         "部屋",
         "新しい",
         "必要とする",
-        "読む"
+        "テレビ・動画などを見る"
       ],
       "correctAnswer": "部屋",
       "hint": "最初の文字は R です。",
-      "explanation": "room は「部屋」という意味です。",
+      "explanation": "room は「部屋」という意味です。例文: My room is clean.",
       "difficulty": 3
     },
     {
@@ -6989,16 +7041,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_room",
       "questionType": "ja_to_en_choice",
-      "prompt": "「部屋」を英語で選ぼう。",
+      "prompt": "例文「私の部屋はきれいです。」で使う「部屋」の英単語は？",
       "choices": [
         "room",
         "new",
         "need",
-        "read"
+        "watch"
       ],
       "correctAnswer": "room",
       "hint": "最初の文字は R です。",
-      "explanation": "「部屋」は room といいます。",
+      "explanation": "この場面では room を使います。My room is clean.",
       "difficulty": 3
     },
     {
@@ -7006,11 +7058,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_room",
       "questionType": "spelling",
-      "prompt": "「部屋」を英語で入力しよう。",
+      "prompt": "例文「私の部屋はきれいです。」の「部屋」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "room",
       "hint": "最初の文字は R です。",
-      "explanation": "room のつづりを完成させよう。",
+      "explanation": "room のつづりを完成させよう。My room is clean.",
       "difficulty": 4
     },
     {
@@ -7024,7 +7076,7 @@
         "部屋",
         "新しい",
         "必要とする",
-        "読む"
+        "テレビ・動画などを見る"
       ],
       "correctAnswer": "部屋",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7041,11 +7093,11 @@
         "ドア",
         "古い",
         "知っている",
-        "書く"
+        "聞く"
       ],
       "correctAnswer": "ドア",
       "hint": "最初の文字は D です。",
-      "explanation": "door は「ドア」という意味です。",
+      "explanation": "door は「ドア」という意味です。例文: Please close the door.",
       "difficulty": 3
     },
     {
@@ -7053,16 +7105,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_door",
       "questionType": "ja_to_en_choice",
-      "prompt": "「ドア」を英語で選ぼう。",
+      "prompt": "例文「ドアを閉めてください。」で使う「ドア」の英単語は？",
       "choices": [
         "door",
         "old",
         "know",
-        "write"
+        "listen"
       ],
       "correctAnswer": "door",
       "hint": "最初の文字は D です。",
-      "explanation": "「ドア」は door といいます。",
+      "explanation": "この場面では door を使います。Please close the door.",
       "difficulty": 3
     },
     {
@@ -7070,11 +7122,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_door",
       "questionType": "spelling",
-      "prompt": "「ドア」を英語で入力しよう。",
+      "prompt": "例文「ドアを閉めてください。」の「ドア」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "door",
       "hint": "最初の文字は D です。",
-      "explanation": "door のつづりを完成させよう。",
+      "explanation": "door のつづりを完成させよう。Please close the door.",
       "difficulty": 4
     },
     {
@@ -7088,7 +7140,7 @@
         "ドア",
         "古い",
         "知っている",
-        "書く"
+        "聞く"
       ],
       "correctAnswer": "ドア",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7105,11 +7157,11 @@
         "窓",
         "大きい",
         "使う",
-        "遊ぶ"
+        "読む"
       ],
       "correctAnswer": "窓",
       "hint": "最初の文字は W です。",
-      "explanation": "window は「窓」という意味です。",
+      "explanation": "window は「窓」という意味です。例文: Open the window, please.",
       "difficulty": 3
     },
     {
@@ -7117,16 +7169,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_window",
       "questionType": "ja_to_en_choice",
-      "prompt": "「窓」を英語で選ぼう。",
+      "prompt": "例文「窓を開けてください。」で使う「窓」の英単語は？",
       "choices": [
         "window",
         "big",
         "use",
-        "play"
+        "read"
       ],
       "correctAnswer": "window",
       "hint": "最初の文字は W です。",
-      "explanation": "「窓」は window といいます。",
+      "explanation": "この場面では window を使います。Open the window, please.",
       "difficulty": 3
     },
     {
@@ -7134,11 +7186,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_window",
       "questionType": "spelling",
-      "prompt": "「窓」を英語で入力しよう。",
+      "prompt": "例文「窓を開けてください。」の「窓」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "window",
       "hint": "最初の文字は W です。",
-      "explanation": "window のつづりを完成させよう。",
+      "explanation": "window のつづりを完成させよう。Open the window, please.",
       "difficulty": 4
     },
     {
@@ -7152,7 +7204,7 @@
         "窓",
         "大きい",
         "使う",
-        "遊ぶ"
+        "読む"
       ],
       "correctAnswer": "窓",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7169,11 +7221,11 @@
         "時間",
         "小さい",
         "作る",
-        "歩く"
+        "書く"
       ],
       "correctAnswer": "時間",
       "hint": "最初の文字は T です。",
-      "explanation": "time は「時間」という意味です。",
+      "explanation": "time は「時間」という意味です。例文: What time is it now?",
       "difficulty": 3
     },
     {
@@ -7181,16 +7233,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_time",
       "questionType": "ja_to_en_choice",
-      "prompt": "「時間」を英語で選ぼう。",
+      "prompt": "例文「今何時ですか。」で使う「時間」の英単語は？",
       "choices": [
         "time",
         "small",
         "make",
-        "walk"
+        "write"
       ],
       "correctAnswer": "time",
       "hint": "最初の文字は T です。",
-      "explanation": "「時間」は time といいます。",
+      "explanation": "この場面では time を使います。What time is it now?",
       "difficulty": 3
     },
     {
@@ -7198,11 +7250,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_time",
       "questionType": "spelling",
-      "prompt": "「時間」を英語で入力しよう。",
+      "prompt": "例文「今何時ですか。」の「時間」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "time",
       "hint": "最初の文字は T です。",
-      "explanation": "time のつづりを完成させよう。",
+      "explanation": "time のつづりを完成させよう。What time is it now?",
       "difficulty": 4
     },
     {
@@ -7216,7 +7268,7 @@
         "時間",
         "小さい",
         "作る",
-        "歩く"
+        "書く"
       ],
       "correctAnswer": "時間",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7233,11 +7285,11 @@
         "日",
         "長い",
         "取る",
-        "買う"
+        "遊ぶ"
       ],
       "correctAnswer": "日",
       "hint": "最初の文字は D です。",
-      "explanation": "day は「日」という意味です。",
+      "explanation": "day は「日」という意味です。例文: Today is a good day.",
       "difficulty": 3
     },
     {
@@ -7245,16 +7297,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_day",
       "questionType": "ja_to_en_choice",
-      "prompt": "「日」を英語で選ぼう。",
+      "prompt": "例文「今日は良い日です。」で使う「日」の英単語は？",
       "choices": [
         "day",
         "long",
         "take",
-        "buy"
+        "play"
       ],
       "correctAnswer": "day",
       "hint": "最初の文字は D です。",
-      "explanation": "「日」は day といいます。",
+      "explanation": "この場面では day を使います。Today is a good day.",
       "difficulty": 3
     },
     {
@@ -7262,11 +7314,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_day",
       "questionType": "spelling",
-      "prompt": "「日」を英語で入力しよう。",
+      "prompt": "例文「今日は良い日です。」の「日」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "day",
       "hint": "最初の文字は D です。",
-      "explanation": "day のつづりを完成させよう。",
+      "explanation": "day のつづりを完成させよう。Today is a good day.",
       "difficulty": 4
     },
     {
@@ -7280,7 +7332,7 @@
         "日",
         "長い",
         "取る",
-        "買う"
+        "遊ぶ"
       ],
       "correctAnswer": "日",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7297,11 +7349,11 @@
         "週",
         "短い",
         "与える",
-        "開ける"
+        "歩く"
       ],
       "correctAnswer": "週",
       "hint": "最初の文字は W です。",
-      "explanation": "week は「週」という意味です。",
+      "explanation": "week は「週」という意味です。例文: We have English twice a week.",
       "difficulty": 3
     },
     {
@@ -7309,16 +7361,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_week",
       "questionType": "ja_to_en_choice",
-      "prompt": "「週」を英語で選ぼう。",
+      "prompt": "例文「私たちは週2回英語があります。」で使う「週」の英単語は？",
       "choices": [
         "week",
         "short",
         "give",
-        "open"
+        "walk"
       ],
       "correctAnswer": "week",
       "hint": "最初の文字は W です。",
-      "explanation": "「週」は week といいます。",
+      "explanation": "この場面では week を使います。We have English twice a week.",
       "difficulty": 3
     },
     {
@@ -7326,11 +7378,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_week",
       "questionType": "spelling",
-      "prompt": "「週」を英語で入力しよう。",
+      "prompt": "例文「私たちは週2回英語があります。」の「週」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "week",
       "hint": "最初の文字は W です。",
-      "explanation": "week のつづりを完成させよう。",
+      "explanation": "week のつづりを完成させよう。We have English twice a week.",
       "difficulty": 4
     },
     {
@@ -7344,7 +7396,7 @@
         "週",
         "短い",
         "与える",
-        "開ける"
+        "歩く"
       ],
       "correctAnswer": "週",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7361,11 +7413,11 @@
         "年",
         "良い",
         "得る",
-        "閉める"
+        "買う"
       ],
       "correctAnswer": "年",
       "hint": "最初の文字は Y です。",
-      "explanation": "year は「年」という意味です。",
+      "explanation": "year は「年」という意味です。例文: This year is exciting.",
       "difficulty": 3
     },
     {
@@ -7373,16 +7425,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_year",
       "questionType": "ja_to_en_choice",
-      "prompt": "「年」を英語で選ぼう。",
+      "prompt": "例文「今年はわくわくします。」で使う「年」の英単語は？",
       "choices": [
         "year",
         "good",
         "get",
-        "close"
+        "buy"
       ],
       "correctAnswer": "year",
       "hint": "最初の文字は Y です。",
-      "explanation": "「年」は year といいます。",
+      "explanation": "この場面では year を使います。This year is exciting.",
       "difficulty": 3
     },
     {
@@ -7390,11 +7442,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_year",
       "questionType": "spelling",
-      "prompt": "「年」を英語で入力しよう。",
+      "prompt": "例文「今年はわくわくします。」の「年」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "year",
       "hint": "最初の文字は Y です。",
-      "explanation": "year のつづりを完成させよう。",
+      "explanation": "year のつづりを完成させよう。This year is exciting.",
       "difficulty": 4
     },
     {
@@ -7408,7 +7460,7 @@
         "年",
         "良い",
         "得る",
-        "閉める"
+        "買う"
       ],
       "correctAnswer": "年",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7425,11 +7477,11 @@
         "今日",
         "悪い",
         "行く",
-        "教える"
+        "開ける"
       ],
       "correctAnswer": "今日",
       "hint": "最初の文字は T です。",
-      "explanation": "today は「今日」という意味です。",
+      "explanation": "today は「今日」という意味です。例文: I have soccer practice today.",
       "difficulty": 3
     },
     {
@@ -7437,16 +7489,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_today",
       "questionType": "ja_to_en_choice",
-      "prompt": "「今日」を英語で選ぼう。",
+      "prompt": "例文「私は今日サッカーの練習があります。」で使う「今日」の英単語は？",
       "choices": [
         "today",
         "bad",
         "go",
-        "teach"
+        "open"
       ],
       "correctAnswer": "today",
       "hint": "最初の文字は T です。",
-      "explanation": "「今日」は today といいます。",
+      "explanation": "この場面では today を使います。I have soccer practice today.",
       "difficulty": 3
     },
     {
@@ -7454,11 +7506,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_today",
       "questionType": "spelling",
-      "prompt": "「今日」を英語で入力しよう。",
+      "prompt": "例文「私は今日サッカーの練習があります。」の「今日」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "today",
       "hint": "最初の文字は T です。",
-      "explanation": "today のつづりを完成させよう。",
+      "explanation": "today のつづりを完成させよう。I have soccer practice today.",
       "difficulty": 4
     },
     {
@@ -7472,7 +7524,7 @@
         "今日",
         "悪い",
         "行く",
-        "教える"
+        "開ける"
       ],
       "correctAnswer": "今日",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7489,11 +7541,11 @@
         "明日",
         "美しい",
         "来る",
-        "学ぶ"
+        "閉める"
       ],
       "correctAnswer": "明日",
       "hint": "最初の文字は T です。",
-      "explanation": "tomorrow は「明日」という意味です。",
+      "explanation": "tomorrow は「明日」という意味です。例文: We will meet tomorrow.",
       "difficulty": 3
     },
     {
@@ -7501,16 +7553,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_tomorrow",
       "questionType": "ja_to_en_choice",
-      "prompt": "「明日」を英語で選ぼう。",
+      "prompt": "例文「私たちは明日会います。」で使う「明日」の英単語は？",
       "choices": [
         "tomorrow",
         "beautiful",
         "come",
-        "learn"
+        "close"
       ],
       "correctAnswer": "tomorrow",
       "hint": "最初の文字は T です。",
-      "explanation": "「明日」は tomorrow といいます。",
+      "explanation": "この場面では tomorrow を使います。We will meet tomorrow.",
       "difficulty": 3
     },
     {
@@ -7518,11 +7570,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_tomorrow",
       "questionType": "spelling",
-      "prompt": "「明日」を英語で入力しよう。",
+      "prompt": "例文「私たちは明日会います。」の「明日」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "tomorrow",
       "hint": "最初の文字は T です。",
-      "explanation": "tomorrow のつづりを完成させよう。",
+      "explanation": "tomorrow のつづりを完成させよう。We will meet tomorrow.",
       "difficulty": 4
     },
     {
@@ -7536,7 +7588,7 @@
         "明日",
         "美しい",
         "来る",
-        "学ぶ"
+        "閉める"
       ],
       "correctAnswer": "明日",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7553,11 +7605,11 @@
         "昨日",
         "きれいな",
         "住む",
-        "理解する"
+        "教える"
       ],
       "correctAnswer": "昨日",
       "hint": "最初の文字は Y です。",
-      "explanation": "yesterday は「昨日」という意味です。",
+      "explanation": "yesterday は「昨日」という意味です。例文: I was busy yesterday.",
       "difficulty": 3
     },
     {
@@ -7565,16 +7617,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_yesterday",
       "questionType": "ja_to_en_choice",
-      "prompt": "「昨日」を英語で選ぼう。",
+      "prompt": "例文「私は昨日忙しかったです。」で使う「昨日」の英単語は？",
       "choices": [
         "yesterday",
         "clean",
         "live",
-        "understand"
+        "teach"
       ],
       "correctAnswer": "yesterday",
       "hint": "最初の文字は Y です。",
-      "explanation": "「昨日」は yesterday といいます。",
+      "explanation": "この場面では yesterday を使います。I was busy yesterday.",
       "difficulty": 3
     },
     {
@@ -7582,11 +7634,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_yesterday",
       "questionType": "spelling",
-      "prompt": "「昨日」を英語で入力しよう。",
+      "prompt": "例文「私は昨日忙しかったです。」の「昨日」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "yesterday",
       "hint": "最初の文字は Y です。",
-      "explanation": "yesterday のつづりを完成させよう。",
+      "explanation": "yesterday のつづりを完成させよう。I was busy yesterday.",
       "difficulty": 4
     },
     {
@@ -7600,7 +7652,7 @@
         "昨日",
         "きれいな",
         "住む",
-        "理解する"
+        "教える"
       ],
       "correctAnswer": "昨日",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7617,11 +7669,11 @@
         "早く",
         "好き",
         "働く",
-        "会う"
+        "学ぶ"
       ],
       "correctAnswer": "早く",
       "hint": "最初の文字は E です。",
-      "explanation": "early は「早く」という意味です。",
+      "explanation": "early は「早く」という意味です。例文: I get up early every day.",
       "difficulty": 3
     },
     {
@@ -7629,16 +7681,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_early",
       "questionType": "ja_to_en_choice",
-      "prompt": "「早く」を英語で選ぼう。",
+      "prompt": "例文「私は毎日早く起きます。」で使う「早く」の英単語は？",
       "choices": [
         "early",
         "like",
         "work",
-        "meet"
+        "learn"
       ],
       "correctAnswer": "early",
       "hint": "最初の文字は E です。",
-      "explanation": "「早く」は early といいます。",
+      "explanation": "この場面では early を使います。I get up early every day.",
       "difficulty": 3
     },
     {
@@ -7646,11 +7698,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_early",
       "questionType": "spelling",
-      "prompt": "「早く」を英語で入力しよう。",
+      "prompt": "例文「私は毎日早く起きます。」の「早く」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "early",
       "hint": "最初の文字は E です。",
-      "explanation": "early のつづりを完成させよう。",
+      "explanation": "early のつづりを完成させよう。I get up early every day.",
       "difficulty": 4
     },
     {
@@ -7664,7 +7716,7 @@
         "早く",
         "好き",
         "働く",
-        "会う"
+        "学ぶ"
       ],
       "correctAnswer": "早く",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7680,12 +7732,12 @@
       "choices": [
         "忙しい",
         "大好き",
-        "見る",
-        "電話する"
+        "自然に見える・目に入る",
+        "理解する"
       ],
       "correctAnswer": "忙しい",
       "hint": "最初の文字は B です。",
-      "explanation": "busy は「忙しい」という意味です。",
+      "explanation": "busy は「忙しい」という意味です。例文: My mother is busy today.",
       "difficulty": 3
     },
     {
@@ -7693,16 +7745,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_busy",
       "questionType": "ja_to_en_choice",
-      "prompt": "「忙しい」を英語で選ぼう。",
+      "prompt": "例文「私の母は今日忙しいです。」で使う「忙しい」の英単語は？",
       "choices": [
         "busy",
         "love",
-        "watch",
-        "call"
+        "see",
+        "understand"
       ],
       "correctAnswer": "busy",
       "hint": "最初の文字は B です。",
-      "explanation": "「忙しい」は busy といいます。",
+      "explanation": "この場面では busy を使います。My mother is busy today.",
       "difficulty": 3
     },
     {
@@ -7710,11 +7762,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_busy",
       "questionType": "spelling",
-      "prompt": "「忙しい」を英語で入力しよう。",
+      "prompt": "例文「私の母は今日忙しいです。」の「忙しい」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "busy",
       "hint": "最初の文字は B です。",
-      "explanation": "busy のつづりを完成させよう。",
+      "explanation": "busy のつづりを完成させよう。My mother is busy today.",
       "difficulty": 4
     },
     {
@@ -7727,8 +7779,8 @@
       "choices": [
         "忙しい",
         "大好き",
-        "見る",
-        "電話する"
+        "自然に見える・目に入る",
+        "理解する"
       ],
       "correctAnswer": "忙しい",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7744,12 +7796,12 @@
       "choices": [
         "親切な",
         "欲しい",
-        "聞く",
-        "生徒"
+        "目を向けて見る",
+        "会う"
       ],
       "correctAnswer": "親切な",
       "hint": "最初の文字は K です。",
-      "explanation": "kind は「親切な」という意味です。",
+      "explanation": "kind は「親切な」という意味です。例文: He is kind to everyone.",
       "difficulty": 3
     },
     {
@@ -7757,16 +7809,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_kind",
       "questionType": "ja_to_en_choice",
-      "prompt": "「親切な」を英語で選ぼう。",
+      "prompt": "例文「彼はみんなに親切です。」で使う「親切な」の英単語は？",
       "choices": [
         "kind",
         "want",
-        "listen",
-        "student"
+        "look",
+        "meet"
       ],
       "correctAnswer": "kind",
       "hint": "最初の文字は K です。",
-      "explanation": "「親切な」は kind といいます。",
+      "explanation": "この場面では kind を使います。He is kind to everyone.",
       "difficulty": 3
     },
     {
@@ -7774,11 +7826,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_kind",
       "questionType": "spelling",
-      "prompt": "「親切な」を英語で入力しよう。",
+      "prompt": "例文「彼はみんなに親切です。」の「親切な」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "kind",
       "hint": "最初の文字は K です。",
-      "explanation": "kind のつづりを完成させよう。",
+      "explanation": "kind のつづりを完成させよう。He is kind to everyone.",
       "difficulty": 4
     },
     {
@@ -7791,8 +7843,8 @@
       "choices": [
         "親切な",
         "欲しい",
-        "聞く",
-        "生徒"
+        "目を向けて見る",
+        "会う"
       ],
       "correctAnswer": "親切な",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7808,12 +7860,12 @@
       "choices": [
         "新しい",
         "必要とする",
-        "読む",
-        "先生"
+        "テレビ・動画などを見る",
+        "電話する"
       ],
       "correctAnswer": "新しい",
       "hint": "最初の文字は N です。",
-      "explanation": "new は「新しい」という意味です。",
+      "explanation": "new は「新しい」という意味です。例文: I have a new notebook.",
       "difficulty": 3
     },
     {
@@ -7821,16 +7873,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_new",
       "questionType": "ja_to_en_choice",
-      "prompt": "「新しい」を英語で選ぼう。",
+      "prompt": "例文「私は新しいノートを持っています。」で使う「新しい」の英単語は？",
       "choices": [
         "new",
         "need",
-        "read",
-        "teacher"
+        "watch",
+        "call"
       ],
       "correctAnswer": "new",
       "hint": "最初の文字は N です。",
-      "explanation": "「新しい」は new といいます。",
+      "explanation": "この場面では new を使います。I have a new notebook.",
       "difficulty": 3
     },
     {
@@ -7838,11 +7890,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_new",
       "questionType": "spelling",
-      "prompt": "「新しい」を英語で入力しよう。",
+      "prompt": "例文「私は新しいノートを持っています。」の「新しい」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "new",
       "hint": "最初の文字は N です。",
-      "explanation": "new のつづりを完成させよう。",
+      "explanation": "new のつづりを完成させよう。I have a new notebook.",
       "difficulty": 4
     },
     {
@@ -7855,8 +7907,8 @@
       "choices": [
         "新しい",
         "必要とする",
-        "読む",
-        "先生"
+        "テレビ・動画などを見る",
+        "電話する"
       ],
       "correctAnswer": "新しい",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7872,12 +7924,12 @@
       "choices": [
         "古い",
         "知っている",
-        "書く",
-        "授業"
+        "聞く",
+        "生徒"
       ],
       "correctAnswer": "古い",
       "hint": "最初の文字は O です。",
-      "explanation": "old は「古い」という意味です。",
+      "explanation": "old は「古い」という意味です。例文: This is an old picture.",
       "difficulty": 3
     },
     {
@@ -7885,16 +7937,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_old",
       "questionType": "ja_to_en_choice",
-      "prompt": "「古い」を英語で選ぼう。",
+      "prompt": "例文「これは古い写真です。」で使う「古い」の英単語は？",
       "choices": [
         "old",
         "know",
-        "write",
-        "class"
+        "listen",
+        "student"
       ],
       "correctAnswer": "old",
       "hint": "最初の文字は O です。",
-      "explanation": "「古い」は old といいます。",
+      "explanation": "この場面では old を使います。This is an old picture.",
       "difficulty": 3
     },
     {
@@ -7902,11 +7954,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_old",
       "questionType": "spelling",
-      "prompt": "「古い」を英語で入力しよう。",
+      "prompt": "例文「これは古い写真です。」の「古い」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "old",
       "hint": "最初の文字は O です。",
-      "explanation": "old のつづりを完成させよう。",
+      "explanation": "old のつづりを完成させよう。This is an old picture.",
       "difficulty": 4
     },
     {
@@ -7919,8 +7971,8 @@
       "choices": [
         "古い",
         "知っている",
-        "書く",
-        "授業"
+        "聞く",
+        "生徒"
       ],
       "correctAnswer": "古い",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -7936,12 +7988,12 @@
       "choices": [
         "大きい",
         "使う",
-        "遊ぶ",
-        "教室"
+        "読む",
+        "先生"
       ],
       "correctAnswer": "大きい",
       "hint": "最初の文字は B です。",
-      "explanation": "big は「大きい」という意味です。",
+      "explanation": "big は「大きい」という意味です。例文: Our school is big.",
       "difficulty": 3
     },
     {
@@ -7949,16 +8001,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_big",
       "questionType": "ja_to_en_choice",
-      "prompt": "「大きい」を英語で選ぼう。",
+      "prompt": "例文「私たちの学校は大きいです。」で使う「大きい」の英単語は？",
       "choices": [
         "big",
         "use",
-        "play",
-        "classroom"
+        "read",
+        "teacher"
       ],
       "correctAnswer": "big",
       "hint": "最初の文字は B です。",
-      "explanation": "「大きい」は big といいます。",
+      "explanation": "この場面では big を使います。Our school is big.",
       "difficulty": 3
     },
     {
@@ -7966,11 +8018,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_big",
       "questionType": "spelling",
-      "prompt": "「大きい」を英語で入力しよう。",
+      "prompt": "例文「私たちの学校は大きいです。」の「大きい」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "big",
       "hint": "最初の文字は B です。",
-      "explanation": "big のつづりを完成させよう。",
+      "explanation": "big のつづりを完成させよう。Our school is big.",
       "difficulty": 4
     },
     {
@@ -7983,8 +8035,8 @@
       "choices": [
         "大きい",
         "使う",
-        "遊ぶ",
-        "教室"
+        "読む",
+        "先生"
       ],
       "correctAnswer": "大きい",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8000,12 +8052,12 @@
       "choices": [
         "小さい",
         "作る",
-        "歩く",
-        "机"
+        "書く",
+        "授業"
       ],
       "correctAnswer": "小さい",
       "hint": "最初の文字は S です。",
-      "explanation": "small は「小さい」という意味です。",
+      "explanation": "small は「小さい」という意味です。例文: The cat is small.",
       "difficulty": 3
     },
     {
@@ -8013,16 +8065,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_small",
       "questionType": "ja_to_en_choice",
-      "prompt": "「小さい」を英語で選ぼう。",
+      "prompt": "例文「その猫は小さいです。」で使う「小さい」の英単語は？",
       "choices": [
         "small",
         "make",
-        "walk",
-        "desk"
+        "write",
+        "class"
       ],
       "correctAnswer": "small",
       "hint": "最初の文字は S です。",
-      "explanation": "「小さい」は small といいます。",
+      "explanation": "この場面では small を使います。The cat is small.",
       "difficulty": 3
     },
     {
@@ -8030,11 +8082,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_small",
       "questionType": "spelling",
-      "prompt": "「小さい」を英語で入力しよう。",
+      "prompt": "例文「その猫は小さいです。」の「小さい」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "small",
       "hint": "最初の文字は S です。",
-      "explanation": "small のつづりを完成させよう。",
+      "explanation": "small のつづりを完成させよう。The cat is small.",
       "difficulty": 4
     },
     {
@@ -8047,8 +8099,8 @@
       "choices": [
         "小さい",
         "作る",
-        "歩く",
-        "机"
+        "書く",
+        "授業"
       ],
       "correctAnswer": "小さい",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8064,12 +8116,12 @@
       "choices": [
         "長い",
         "取る",
-        "買う",
-        "ノート"
+        "遊ぶ",
+        "教室"
       ],
       "correctAnswer": "長い",
       "hint": "最初の文字は L です。",
-      "explanation": "long は「長い」という意味です。",
+      "explanation": "long は「長い」という意味です。例文: This river is long.",
       "difficulty": 3
     },
     {
@@ -8077,16 +8129,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_long",
       "questionType": "ja_to_en_choice",
-      "prompt": "「長い」を英語で選ぼう。",
+      "prompt": "例文「この川は長いです。」で使う「長い」の英単語は？",
       "choices": [
         "long",
         "take",
-        "buy",
-        "notebook"
+        "play",
+        "classroom"
       ],
       "correctAnswer": "long",
       "hint": "最初の文字は L です。",
-      "explanation": "「長い」は long といいます。",
+      "explanation": "この場面では long を使います。This river is long.",
       "difficulty": 3
     },
     {
@@ -8094,11 +8146,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_long",
       "questionType": "spelling",
-      "prompt": "「長い」を英語で入力しよう。",
+      "prompt": "例文「この川は長いです。」の「長い」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "long",
       "hint": "最初の文字は L です。",
-      "explanation": "long のつづりを完成させよう。",
+      "explanation": "long のつづりを完成させよう。This river is long.",
       "difficulty": 4
     },
     {
@@ -8111,8 +8163,8 @@
       "choices": [
         "長い",
         "取る",
-        "買う",
-        "ノート"
+        "遊ぶ",
+        "教室"
       ],
       "correctAnswer": "長い",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8128,12 +8180,12 @@
       "choices": [
         "短い",
         "与える",
-        "開ける",
-        "えんぴつ"
+        "歩く",
+        "机"
       ],
       "correctAnswer": "短い",
       "hint": "最初の文字は S です。",
-      "explanation": "short は「短い」という意味です。",
+      "explanation": "short は「短い」という意味です。例文: This pencil is short.",
       "difficulty": 4
     },
     {
@@ -8141,16 +8193,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_short",
       "questionType": "ja_to_en_choice",
-      "prompt": "「短い」を英語で選ぼう。",
+      "prompt": "例文「このえんぴつは短いです。」で使う「短い」の英単語は？",
       "choices": [
         "short",
         "give",
-        "open",
-        "pencil"
+        "walk",
+        "desk"
       ],
       "correctAnswer": "short",
       "hint": "最初の文字は S です。",
-      "explanation": "「短い」は short といいます。",
+      "explanation": "この場面では short を使います。This pencil is short.",
       "difficulty": 4
     },
     {
@@ -8158,11 +8210,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_short",
       "questionType": "spelling",
-      "prompt": "「短い」を英語で入力しよう。",
+      "prompt": "例文「このえんぴつは短いです。」の「短い」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "short",
       "hint": "最初の文字は S です。",
-      "explanation": "short のつづりを完成させよう。",
+      "explanation": "short のつづりを完成させよう。This pencil is short.",
       "difficulty": 5
     },
     {
@@ -8175,8 +8227,8 @@
       "choices": [
         "短い",
         "与える",
-        "開ける",
-        "えんぴつ"
+        "歩く",
+        "机"
       ],
       "correctAnswer": "短い",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8192,12 +8244,12 @@
       "choices": [
         "良い",
         "得る",
-        "閉める",
-        "質問"
+        "買う",
+        "ノート"
       ],
       "correctAnswer": "良い",
       "hint": "最初の文字は G です。",
-      "explanation": "good は「良い」という意味です。",
+      "explanation": "good は「良い」という意味です。例文: You did a good job.",
       "difficulty": 4
     },
     {
@@ -8205,16 +8257,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_good",
       "questionType": "ja_to_en_choice",
-      "prompt": "「良い」を英語で選ぼう。",
+      "prompt": "例文「あなたは良くできました。」で使う「良い」の英単語は？",
       "choices": [
         "good",
         "get",
-        "close",
-        "question"
+        "buy",
+        "notebook"
       ],
       "correctAnswer": "good",
       "hint": "最初の文字は G です。",
-      "explanation": "「良い」は good といいます。",
+      "explanation": "この場面では good を使います。You did a good job.",
       "difficulty": 4
     },
     {
@@ -8222,11 +8274,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_good",
       "questionType": "spelling",
-      "prompt": "「良い」を英語で入力しよう。",
+      "prompt": "例文「あなたは良くできました。」の「良い」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "good",
       "hint": "最初の文字は G です。",
-      "explanation": "good のつづりを完成させよう。",
+      "explanation": "good のつづりを完成させよう。You did a good job.",
       "difficulty": 5
     },
     {
@@ -8239,8 +8291,8 @@
       "choices": [
         "良い",
         "得る",
-        "閉める",
-        "質問"
+        "買う",
+        "ノート"
       ],
       "correctAnswer": "良い",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8256,12 +8308,12 @@
       "choices": [
         "悪い",
         "行く",
-        "教える",
-        "答え"
+        "開ける",
+        "えんぴつ"
       ],
       "correctAnswer": "悪い",
       "hint": "最初の文字は B です。",
-      "explanation": "bad は「悪い」という意味です。",
+      "explanation": "bad は「悪い」という意味です。例文: The weather is bad today.",
       "difficulty": 4
     },
     {
@@ -8269,16 +8321,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_bad",
       "questionType": "ja_to_en_choice",
-      "prompt": "「悪い」を英語で選ぼう。",
+      "prompt": "例文「今日の天気は悪いです。」で使う「悪い」の英単語は？",
       "choices": [
         "bad",
         "go",
-        "teach",
-        "answer"
+        "open",
+        "pencil"
       ],
       "correctAnswer": "bad",
       "hint": "最初の文字は B です。",
-      "explanation": "「悪い」は bad といいます。",
+      "explanation": "この場面では bad を使います。The weather is bad today.",
       "difficulty": 4
     },
     {
@@ -8286,11 +8338,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_bad",
       "questionType": "spelling",
-      "prompt": "「悪い」を英語で入力しよう。",
+      "prompt": "例文「今日の天気は悪いです。」の「悪い」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "bad",
       "hint": "最初の文字は B です。",
-      "explanation": "bad のつづりを完成させよう。",
+      "explanation": "bad のつづりを完成させよう。The weather is bad today.",
       "difficulty": 5
     },
     {
@@ -8303,8 +8355,8 @@
       "choices": [
         "悪い",
         "行く",
-        "教える",
-        "答え"
+        "開ける",
+        "えんぴつ"
       ],
       "correctAnswer": "悪い",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8320,12 +8372,12 @@
       "choices": [
         "美しい",
         "来る",
-        "学ぶ",
-        "言語"
+        "閉める",
+        "質問"
       ],
       "correctAnswer": "美しい",
       "hint": "最初の文字は B です。",
-      "explanation": "beautiful は「美しい」という意味です。",
+      "explanation": "beautiful は「美しい」という意味です。例文: The flower is beautiful.",
       "difficulty": 4
     },
     {
@@ -8333,16 +8385,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_beautiful",
       "questionType": "ja_to_en_choice",
-      "prompt": "「美しい」を英語で選ぼう。",
+      "prompt": "例文「その花は美しいです。」で使う「美しい」の英単語は？",
       "choices": [
         "beautiful",
         "come",
-        "learn",
-        "language"
+        "close",
+        "question"
       ],
       "correctAnswer": "beautiful",
       "hint": "最初の文字は B です。",
-      "explanation": "「美しい」は beautiful といいます。",
+      "explanation": "この場面では beautiful を使います。The flower is beautiful.",
       "difficulty": 4
     },
     {
@@ -8350,11 +8402,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_beautiful",
       "questionType": "spelling",
-      "prompt": "「美しい」を英語で入力しよう。",
+      "prompt": "例文「その花は美しいです。」の「美しい」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "beautiful",
       "hint": "最初の文字は B です。",
-      "explanation": "beautiful のつづりを完成させよう。",
+      "explanation": "beautiful のつづりを完成させよう。The flower is beautiful.",
       "difficulty": 5
     },
     {
@@ -8367,8 +8419,8 @@
       "choices": [
         "美しい",
         "来る",
-        "学ぶ",
-        "言語"
+        "閉める",
+        "質問"
       ],
       "correctAnswer": "美しい",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8384,12 +8436,12 @@
       "choices": [
         "きれいな",
         "住む",
-        "理解する",
-        "英語"
+        "教える",
+        "答え"
       ],
       "correctAnswer": "きれいな",
       "hint": "最初の文字は C です。",
-      "explanation": "clean は「きれいな」という意味です。",
+      "explanation": "clean は「きれいな」という意味です。例文: Keep your room clean.",
       "difficulty": 4
     },
     {
@@ -8397,16 +8449,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_clean",
       "questionType": "ja_to_en_choice",
-      "prompt": "「きれいな」を英語で選ぼう。",
+      "prompt": "例文「部屋をきれいに保ちましょう。」で使う「きれいな」の英単語は？",
       "choices": [
         "clean",
         "live",
-        "understand",
-        "English"
+        "teach",
+        "answer"
       ],
       "correctAnswer": "clean",
       "hint": "最初の文字は C です。",
-      "explanation": "「きれいな」は clean といいます。",
+      "explanation": "この場面では clean を使います。Keep your room clean.",
       "difficulty": 4
     },
     {
@@ -8414,11 +8466,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_clean",
       "questionType": "spelling",
-      "prompt": "「きれいな」を英語で入力しよう。",
+      "prompt": "例文「部屋をきれいに保ちましょう。」の「きれいな」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "clean",
       "hint": "最初の文字は C です。",
-      "explanation": "clean のつづりを完成させよう。",
+      "explanation": "clean のつづりを完成させよう。Keep your room clean.",
       "difficulty": 5
     },
     {
@@ -8431,8 +8483,8 @@
       "choices": [
         "きれいな",
         "住む",
-        "理解する",
-        "英語"
+        "教える",
+        "答え"
       ],
       "correctAnswer": "きれいな",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8448,12 +8500,12 @@
       "choices": [
         "好き",
         "働く",
-        "会う",
-        "日本語"
+        "学ぶ",
+        "言語"
       ],
       "correctAnswer": "好き",
       "hint": "最初の文字は L です。",
-      "explanation": "like は「好き」という意味です。",
+      "explanation": "like は「好き」という意味です。例文: I like music.",
       "difficulty": 4
     },
     {
@@ -8461,16 +8513,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_like",
       "questionType": "ja_to_en_choice",
-      "prompt": "「好き」を英語で選ぼう。",
+      "prompt": "例文「私は音楽が好きです。」で使う「好き」の英単語は？",
       "choices": [
         "like",
         "work",
-        "meet",
-        "Japanese"
+        "learn",
+        "language"
       ],
       "correctAnswer": "like",
       "hint": "最初の文字は L です。",
-      "explanation": "「好き」は like といいます。",
+      "explanation": "この場面では like を使います。I like music.",
       "difficulty": 4
     },
     {
@@ -8478,11 +8530,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_like",
       "questionType": "spelling",
-      "prompt": "「好き」を英語で入力しよう。",
+      "prompt": "例文「私は音楽が好きです。」の「好き」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "like",
       "hint": "最初の文字は L です。",
-      "explanation": "like のつづりを完成させよう。",
+      "explanation": "like のつづりを完成させよう。I like music.",
       "difficulty": 5
     },
     {
@@ -8495,8 +8547,8 @@
       "choices": [
         "好き",
         "働く",
-        "会う",
-        "日本語"
+        "学ぶ",
+        "言語"
       ],
       "correctAnswer": "好き",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8511,13 +8563,13 @@
       "prompt": "love の意味はどれ？",
       "choices": [
         "大好き",
-        "見る",
-        "電話する",
-        "理科"
+        "自然に見える・目に入る",
+        "理解する",
+        "英語"
       ],
       "correctAnswer": "大好き",
       "hint": "最初の文字は L です。",
-      "explanation": "love は「大好き」という意味です。",
+      "explanation": "love は「大好き」という意味です。例文: I love this song.",
       "difficulty": 4
     },
     {
@@ -8525,16 +8577,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_love",
       "questionType": "ja_to_en_choice",
-      "prompt": "「大好き」を英語で選ぼう。",
+      "prompt": "例文「私はこの歌が大好きです。」で使う「大好き」の英単語は？",
       "choices": [
         "love",
-        "watch",
-        "call",
-        "science"
+        "see",
+        "understand",
+        "English"
       ],
       "correctAnswer": "love",
       "hint": "最初の文字は L です。",
-      "explanation": "「大好き」は love といいます。",
+      "explanation": "この場面では love を使います。I love this song.",
       "difficulty": 4
     },
     {
@@ -8542,11 +8594,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_love",
       "questionType": "spelling",
-      "prompt": "「大好き」を英語で入力しよう。",
+      "prompt": "例文「私はこの歌が大好きです。」の「大好き」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "love",
       "hint": "最初の文字は L です。",
-      "explanation": "love のつづりを完成させよう。",
+      "explanation": "love のつづりを完成させよう。I love this song.",
       "difficulty": 5
     },
     {
@@ -8558,9 +8610,9 @@
       "prompt": "リスニング 62 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "大好き",
-        "見る",
-        "電話する",
-        "理科"
+        "自然に見える・目に入る",
+        "理解する",
+        "英語"
       ],
       "correctAnswer": "大好き",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8575,13 +8627,13 @@
       "prompt": "want の意味はどれ？",
       "choices": [
         "欲しい",
-        "聞く",
-        "生徒",
-        "数学"
+        "目を向けて見る",
+        "会う",
+        "日本語"
       ],
       "correctAnswer": "欲しい",
       "hint": "最初の文字は W です。",
-      "explanation": "want は「欲しい」という意味です。",
+      "explanation": "want は「欲しい」という意味です。例文: I want a new bike.",
       "difficulty": 4
     },
     {
@@ -8589,16 +8641,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_want",
       "questionType": "ja_to_en_choice",
-      "prompt": "「欲しい」を英語で選ぼう。",
+      "prompt": "例文「私は新しい自転車が欲しいです。」で使う「欲しい」の英単語は？",
       "choices": [
         "want",
-        "listen",
-        "student",
-        "math"
+        "look",
+        "meet",
+        "Japanese"
       ],
       "correctAnswer": "want",
       "hint": "最初の文字は W です。",
-      "explanation": "「欲しい」は want といいます。",
+      "explanation": "この場面では want を使います。I want a new bike.",
       "difficulty": 4
     },
     {
@@ -8606,11 +8658,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_want",
       "questionType": "spelling",
-      "prompt": "「欲しい」を英語で入力しよう。",
+      "prompt": "例文「私は新しい自転車が欲しいです。」の「欲しい」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "want",
       "hint": "最初の文字は W です。",
-      "explanation": "want のつづりを完成させよう。",
+      "explanation": "want のつづりを完成させよう。I want a new bike.",
       "difficulty": 5
     },
     {
@@ -8622,9 +8674,9 @@
       "prompt": "リスニング 63 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "欲しい",
-        "聞く",
-        "生徒",
-        "数学"
+        "目を向けて見る",
+        "会う",
+        "日本語"
       ],
       "correctAnswer": "欲しい",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8639,13 +8691,13 @@
       "prompt": "need の意味はどれ？",
       "choices": [
         "必要とする",
-        "読む",
-        "先生",
-        "歴史"
+        "テレビ・動画などを見る",
+        "電話する",
+        "理科"
       ],
       "correctAnswer": "必要とする",
       "hint": "最初の文字は N です。",
-      "explanation": "need は「必要とする」という意味です。",
+      "explanation": "need は「必要とする」という意味です。例文: We need more time.",
       "difficulty": 4
     },
     {
@@ -8653,16 +8705,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_need",
       "questionType": "ja_to_en_choice",
-      "prompt": "「必要とする」を英語で選ぼう。",
+      "prompt": "例文「私たちはもっと時間が必要です。」で使う「必要とする」の英単語は？",
       "choices": [
         "need",
-        "read",
-        "teacher",
-        "history"
+        "watch",
+        "call",
+        "science"
       ],
       "correctAnswer": "need",
       "hint": "最初の文字は N です。",
-      "explanation": "「必要とする」は need といいます。",
+      "explanation": "この場面では need を使います。We need more time.",
       "difficulty": 4
     },
     {
@@ -8670,11 +8722,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_need",
       "questionType": "spelling",
-      "prompt": "「必要とする」を英語で入力しよう。",
+      "prompt": "例文「私たちはもっと時間が必要です。」の「必要とする」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "need",
       "hint": "最初の文字は N です。",
-      "explanation": "need のつづりを完成させよう。",
+      "explanation": "need のつづりを完成させよう。We need more time.",
       "difficulty": 5
     },
     {
@@ -8686,9 +8738,9 @@
       "prompt": "リスニング 64 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "必要とする",
-        "読む",
-        "先生",
-        "歴史"
+        "テレビ・動画などを見る",
+        "電話する",
+        "理科"
       ],
       "correctAnswer": "必要とする",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8703,13 +8755,13 @@
       "prompt": "know の意味はどれ？",
       "choices": [
         "知っている",
-        "書く",
-        "授業",
-        "美術"
+        "聞く",
+        "生徒",
+        "数学"
       ],
       "correctAnswer": "知っている",
       "hint": "最初の文字は K です。",
-      "explanation": "know は「知っている」という意味です。",
+      "explanation": "know は「知っている」という意味です。例文: I know that teacher.",
       "difficulty": 4
     },
     {
@@ -8717,16 +8769,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_know",
       "questionType": "ja_to_en_choice",
-      "prompt": "「知っている」を英語で選ぼう。",
+      "prompt": "例文「私はあの先生を知っています。」で使う「知っている」の英単語は？",
       "choices": [
         "know",
-        "write",
-        "class",
-        "art"
+        "listen",
+        "student",
+        "math"
       ],
       "correctAnswer": "know",
       "hint": "最初の文字は K です。",
-      "explanation": "「知っている」は know といいます。",
+      "explanation": "この場面では know を使います。I know that teacher.",
       "difficulty": 4
     },
     {
@@ -8734,11 +8786,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_know",
       "questionType": "spelling",
-      "prompt": "「知っている」を英語で入力しよう。",
+      "prompt": "例文「私はあの先生を知っています。」の「知っている」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "know",
       "hint": "最初の文字は K です。",
-      "explanation": "know のつづりを完成させよう。",
+      "explanation": "know のつづりを完成させよう。I know that teacher.",
       "difficulty": 5
     },
     {
@@ -8750,9 +8802,9 @@
       "prompt": "リスニング 65 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "知っている",
-        "書く",
-        "授業",
-        "美術"
+        "聞く",
+        "生徒",
+        "数学"
       ],
       "correctAnswer": "知っている",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8767,13 +8819,13 @@
       "prompt": "use の意味はどれ？",
       "choices": [
         "使う",
-        "遊ぶ",
-        "教室",
-        "昼食"
+        "読む",
+        "先生",
+        "歴史"
       ],
       "correctAnswer": "使う",
       "hint": "最初の文字は U です。",
-      "explanation": "use は「使う」という意味です。",
+      "explanation": "use は「使う」という意味です。例文: We use this room for class.",
       "difficulty": 4
     },
     {
@@ -8781,16 +8833,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_use",
       "questionType": "ja_to_en_choice",
-      "prompt": "「使う」を英語で選ぼう。",
+      "prompt": "例文「私たちはこの部屋を授業で使います。」で使う「使う」の英単語は？",
       "choices": [
         "use",
-        "play",
-        "classroom",
-        "lunch"
+        "read",
+        "teacher",
+        "history"
       ],
       "correctAnswer": "use",
       "hint": "最初の文字は U です。",
-      "explanation": "「使う」は use といいます。",
+      "explanation": "この場面では use を使います。We use this room for class.",
       "difficulty": 4
     },
     {
@@ -8798,11 +8850,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_use",
       "questionType": "spelling",
-      "prompt": "「使う」を英語で入力しよう。",
+      "prompt": "例文「私たちはこの部屋を授業で使います。」の「使う」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "use",
       "hint": "最初の文字は U です。",
-      "explanation": "use のつづりを完成させよう。",
+      "explanation": "use のつづりを完成させよう。We use this room for class.",
       "difficulty": 5
     },
     {
@@ -8814,9 +8866,9 @@
       "prompt": "リスニング 66 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "使う",
-        "遊ぶ",
-        "教室",
-        "昼食"
+        "読む",
+        "先生",
+        "歴史"
       ],
       "correctAnswer": "使う",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8831,13 +8883,13 @@
       "prompt": "make の意味はどれ？",
       "choices": [
         "作る",
-        "歩く",
-        "机",
-        "朝食"
+        "書く",
+        "授業",
+        "美術"
       ],
       "correctAnswer": "作る",
       "hint": "最初の文字は M です。",
-      "explanation": "make は「作る」という意味です。",
+      "explanation": "make は「作る」という意味です。例文: I make breakfast for my family.",
       "difficulty": 4
     },
     {
@@ -8845,16 +8897,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_make",
       "questionType": "ja_to_en_choice",
-      "prompt": "「作る」を英語で選ぼう。",
+      "prompt": "例文「私は家族のために朝食を作ります。」で使う「作る」の英単語は？",
       "choices": [
         "make",
-        "walk",
-        "desk",
-        "breakfast"
+        "write",
+        "class",
+        "art"
       ],
       "correctAnswer": "make",
       "hint": "最初の文字は M です。",
-      "explanation": "「作る」は make といいます。",
+      "explanation": "この場面では make を使います。I make breakfast for my family.",
       "difficulty": 4
     },
     {
@@ -8862,11 +8914,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_make",
       "questionType": "spelling",
-      "prompt": "「作る」を英語で入力しよう。",
+      "prompt": "例文「私は家族のために朝食を作ります。」の「作る」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "make",
       "hint": "最初の文字は M です。",
-      "explanation": "make のつづりを完成させよう。",
+      "explanation": "make のつづりを完成させよう。I make breakfast for my family.",
       "difficulty": 5
     },
     {
@@ -8878,9 +8930,9 @@
       "prompt": "リスニング 67 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "作る",
-        "歩く",
-        "机",
-        "朝食"
+        "書く",
+        "授業",
+        "美術"
       ],
       "correctAnswer": "作る",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8895,13 +8947,13 @@
       "prompt": "take の意味はどれ？",
       "choices": [
         "取る",
-        "買う",
-        "ノート",
-        "夕食"
+        "遊ぶ",
+        "教室",
+        "昼食"
       ],
       "correctAnswer": "取る",
       "hint": "最初の文字は T です。",
-      "explanation": "take は「取る」という意味です。",
+      "explanation": "take は「取る」という意味です。例文: Take this book with you.",
       "difficulty": 4
     },
     {
@@ -8909,16 +8961,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_take",
       "questionType": "ja_to_en_choice",
-      "prompt": "「取る」を英語で選ぼう。",
+      "prompt": "例文「この本を持っていってください。」で使う「取る」の英単語は？",
       "choices": [
         "take",
-        "buy",
-        "notebook",
-        "dinner"
+        "play",
+        "classroom",
+        "lunch"
       ],
       "correctAnswer": "take",
       "hint": "最初の文字は T です。",
-      "explanation": "「取る」は take といいます。",
+      "explanation": "この場面では take を使います。Take this book with you.",
       "difficulty": 4
     },
     {
@@ -8926,11 +8978,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_take",
       "questionType": "spelling",
-      "prompt": "「取る」を英語で入力しよう。",
+      "prompt": "例文「この本を持っていってください。」の「取る」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "take",
       "hint": "最初の文字は T です。",
-      "explanation": "take のつづりを完成させよう。",
+      "explanation": "take のつづりを完成させよう。Take this book with you.",
       "difficulty": 5
     },
     {
@@ -8942,9 +8994,9 @@
       "prompt": "リスニング 68 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "取る",
-        "買う",
-        "ノート",
-        "夕食"
+        "遊ぶ",
+        "教室",
+        "昼食"
       ],
       "correctAnswer": "取る",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -8959,13 +9011,13 @@
       "prompt": "give の意味はどれ？",
       "choices": [
         "与える",
-        "開ける",
-        "えんぴつ",
-        "家族"
+        "歩く",
+        "机",
+        "朝食"
       ],
       "correctAnswer": "与える",
       "hint": "最初の文字は G です。",
-      "explanation": "give は「与える」という意味です。",
+      "explanation": "give は「与える」という意味です。例文: Please give me your answer.",
       "difficulty": 4
     },
     {
@@ -8973,16 +9025,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_give",
       "questionType": "ja_to_en_choice",
-      "prompt": "「与える」を英語で選ぼう。",
+      "prompt": "例文「答えを私に渡してください。」で使う「与える」の英単語は？",
       "choices": [
         "give",
-        "open",
-        "pencil",
-        "family"
+        "walk",
+        "desk",
+        "breakfast"
       ],
       "correctAnswer": "give",
       "hint": "最初の文字は G です。",
-      "explanation": "「与える」は give といいます。",
+      "explanation": "この場面では give を使います。Please give me your answer.",
       "difficulty": 4
     },
     {
@@ -8990,11 +9042,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_give",
       "questionType": "spelling",
-      "prompt": "「与える」を英語で入力しよう。",
+      "prompt": "例文「答えを私に渡してください。」の「与える」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "give",
       "hint": "最初の文字は G です。",
-      "explanation": "give のつづりを完成させよう。",
+      "explanation": "give のつづりを完成させよう。Please give me your answer.",
       "difficulty": 5
     },
     {
@@ -9006,9 +9058,9 @@
       "prompt": "リスニング 69 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "与える",
-        "開ける",
-        "えんぴつ",
-        "家族"
+        "歩く",
+        "机",
+        "朝食"
       ],
       "correctAnswer": "与える",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -9023,13 +9075,13 @@
       "prompt": "get の意味はどれ？",
       "choices": [
         "得る",
-        "閉める",
-        "質問",
-        "母"
+        "買う",
+        "ノート",
+        "夕食"
       ],
       "correctAnswer": "得る",
       "hint": "最初の文字は G です。",
-      "explanation": "get は「得る」という意味です。",
+      "explanation": "get は「得る」という意味です。例文: I get a letter from my friend.",
       "difficulty": 4
     },
     {
@@ -9037,16 +9089,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_get",
       "questionType": "ja_to_en_choice",
-      "prompt": "「得る」を英語で選ぼう。",
+      "prompt": "例文「私は友達から手紙を受け取ります。」で使う「得る」の英単語は？",
       "choices": [
         "get",
-        "close",
-        "question",
-        "mother"
+        "buy",
+        "notebook",
+        "dinner"
       ],
       "correctAnswer": "get",
       "hint": "最初の文字は G です。",
-      "explanation": "「得る」は get といいます。",
+      "explanation": "この場面では get を使います。I get a letter from my friend.",
       "difficulty": 4
     },
     {
@@ -9054,11 +9106,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_get",
       "questionType": "spelling",
-      "prompt": "「得る」を英語で入力しよう。",
+      "prompt": "例文「私は友達から手紙を受け取ります。」の「得る」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "get",
       "hint": "最初の文字は G です。",
-      "explanation": "get のつづりを完成させよう。",
+      "explanation": "get のつづりを完成させよう。I get a letter from my friend.",
       "difficulty": 5
     },
     {
@@ -9070,9 +9122,9 @@
       "prompt": "リスニング 70 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "得る",
-        "閉める",
-        "質問",
-        "母"
+        "買う",
+        "ノート",
+        "夕食"
       ],
       "correctAnswer": "得る",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -9087,13 +9139,13 @@
       "prompt": "go の意味はどれ？",
       "choices": [
         "行く",
-        "教える",
-        "答え",
-        "父"
+        "開ける",
+        "えんぴつ",
+        "家族"
       ],
       "correctAnswer": "行く",
       "hint": "最初の文字は G です。",
-      "explanation": "go は「行く」という意味です。",
+      "explanation": "go は「行く」という意味です。例文: We go to the park on Sunday.",
       "difficulty": 4
     },
     {
@@ -9101,16 +9153,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_go",
       "questionType": "ja_to_en_choice",
-      "prompt": "「行く」を英語で選ぼう。",
+      "prompt": "例文「私たちは日曜日に公園へ行きます。」で使う「行く」の英単語は？",
       "choices": [
         "go",
-        "teach",
-        "answer",
-        "father"
+        "open",
+        "pencil",
+        "family"
       ],
       "correctAnswer": "go",
       "hint": "最初の文字は G です。",
-      "explanation": "「行く」は go といいます。",
+      "explanation": "この場面では go を使います。We go to the park on Sunday.",
       "difficulty": 4
     },
     {
@@ -9118,11 +9170,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_go",
       "questionType": "spelling",
-      "prompt": "「行く」を英語で入力しよう。",
+      "prompt": "例文「私たちは日曜日に公園へ行きます。」の「行く」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "go",
       "hint": "最初の文字は G です。",
-      "explanation": "go のつづりを完成させよう。",
+      "explanation": "go のつづりを完成させよう。We go to the park on Sunday.",
       "difficulty": 5
     },
     {
@@ -9134,9 +9186,9 @@
       "prompt": "リスニング 71 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "行く",
-        "教える",
-        "答え",
-        "父"
+        "開ける",
+        "えんぴつ",
+        "家族"
       ],
       "correctAnswer": "行く",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -9151,13 +9203,13 @@
       "prompt": "come の意味はどれ？",
       "choices": [
         "来る",
-        "学ぶ",
-        "言語",
-        "兄弟"
+        "閉める",
+        "質問",
+        "母"
       ],
       "correctAnswer": "来る",
       "hint": "最初の文字は C です。",
-      "explanation": "come は「来る」という意味です。",
+      "explanation": "come は「来る」という意味です。例文: Come to my house after school.",
       "difficulty": 4
     },
     {
@@ -9165,16 +9217,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_come",
       "questionType": "ja_to_en_choice",
-      "prompt": "「来る」を英語で選ぼう。",
+      "prompt": "例文「放課後私の家に来てください。」で使う「来る」の英単語は？",
       "choices": [
         "come",
-        "learn",
-        "language",
-        "brother"
+        "close",
+        "question",
+        "mother"
       ],
       "correctAnswer": "come",
       "hint": "最初の文字は C です。",
-      "explanation": "「来る」は come といいます。",
+      "explanation": "この場面では come を使います。Come to my house after school.",
       "difficulty": 4
     },
     {
@@ -9182,11 +9234,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_come",
       "questionType": "spelling",
-      "prompt": "「来る」を英語で入力しよう。",
+      "prompt": "例文「放課後私の家に来てください。」の「来る」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "come",
       "hint": "最初の文字は C です。",
-      "explanation": "come のつづりを完成させよう。",
+      "explanation": "come のつづりを完成させよう。Come to my house after school.",
       "difficulty": 5
     },
     {
@@ -9198,9 +9250,9 @@
       "prompt": "リスニング 72 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "来る",
-        "学ぶ",
-        "言語",
-        "兄弟"
+        "閉める",
+        "質問",
+        "母"
       ],
       "correctAnswer": "来る",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -9215,13 +9267,13 @@
       "prompt": "live の意味はどれ？",
       "choices": [
         "住む",
-        "理解する",
-        "英語",
-        "姉妹"
+        "教える",
+        "答え",
+        "父"
       ],
       "correctAnswer": "住む",
       "hint": "最初の文字は L です。",
-      "explanation": "live は「住む」という意味です。",
+      "explanation": "live は「住む」という意味です。例文: I live in this city.",
       "difficulty": 4
     },
     {
@@ -9229,16 +9281,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_live",
       "questionType": "ja_to_en_choice",
-      "prompt": "「住む」を英語で選ぼう。",
+      "prompt": "例文「私はこの都市に住んでいます。」で使う「住む」の英単語は？",
       "choices": [
         "live",
-        "understand",
-        "English",
-        "sister"
+        "teach",
+        "answer",
+        "father"
       ],
       "correctAnswer": "live",
       "hint": "最初の文字は L です。",
-      "explanation": "「住む」は live といいます。",
+      "explanation": "この場面では live を使います。I live in this city.",
       "difficulty": 4
     },
     {
@@ -9246,11 +9298,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_live",
       "questionType": "spelling",
-      "prompt": "「住む」を英語で入力しよう。",
+      "prompt": "例文「私はこの都市に住んでいます。」の「住む」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "live",
       "hint": "最初の文字は L です。",
-      "explanation": "live のつづりを完成させよう。",
+      "explanation": "live のつづりを完成させよう。I live in this city.",
       "difficulty": 5
     },
     {
@@ -9262,9 +9314,9 @@
       "prompt": "リスニング 73 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "住む",
-        "理解する",
-        "英語",
-        "姉妹"
+        "教える",
+        "答え",
+        "父"
       ],
       "correctAnswer": "住む",
       "hint": "読み上げボタンでもう一度聞けます。",
@@ -9279,13 +9331,13 @@
       "prompt": "work の意味はどれ？",
       "choices": [
         "働く",
-        "会う",
-        "日本語",
-        "祖父"
+        "学ぶ",
+        "言語",
+        "兄弟"
       ],
       "correctAnswer": "働く",
       "hint": "最初の文字は W です。",
-      "explanation": "work は「働く」という意味です。",
+      "explanation": "work は「働く」という意味です。例文: My father works every day.",
       "difficulty": 4
     },
     {
@@ -9293,16 +9345,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_work",
       "questionType": "ja_to_en_choice",
-      "prompt": "「働く」を英語で選ぼう。",
+      "prompt": "例文「私の父は毎日働いています。」で使う「働く」の英単語は？",
       "choices": [
         "work",
-        "meet",
-        "Japanese",
-        "grandfather"
+        "learn",
+        "language",
+        "brother"
       ],
       "correctAnswer": "work",
       "hint": "最初の文字は W です。",
-      "explanation": "「働く」は work といいます。",
+      "explanation": "この場面では work を使います。My father works every day.",
       "difficulty": 4
     },
     {
@@ -9310,11 +9362,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_work",
       "questionType": "spelling",
-      "prompt": "「働く」を英語で入力しよう。",
+      "prompt": "例文「私の父は毎日働いています。」の「働く」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "work",
       "hint": "最初の文字は W です。",
-      "explanation": "work のつづりを完成させよう。",
+      "explanation": "work のつづりを完成させよう。My father works every day.",
       "difficulty": 5
     },
     {
@@ -9326,13 +9378,141 @@
       "prompt": "リスニング 74 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "働く",
-        "会う",
-        "日本語",
-        "祖父"
+        "学ぶ",
+        "言語",
+        "兄弟"
       ],
       "correctAnswer": "働く",
       "hint": "読み上げボタンでもう一度聞けます。",
       "explanation": "聞こえた単語は work。「働く」です。",
+      "difficulty": 4
+    },
+    {
+      "id": "question_jhs1_see_meaning",
+      "contentType": "word",
+      "contentId": "word_jhs1_see",
+      "questionType": "en_to_ja_choice",
+      "prompt": "see の意味はどれ？",
+      "choices": [
+        "自然に見える・目に入る",
+        "理解する",
+        "英語",
+        "姉妹"
+      ],
+      "correctAnswer": "自然に見える・目に入る",
+      "hint": "意識しなくても自然に目に入る・見えるときに使います。",
+      "explanation": "see は「自然に見える・目に入る」という意味です。例文: I can see a bird in the tree.",
+      "difficulty": 4
+    },
+    {
+      "id": "question_jhs1_see_production",
+      "contentType": "word",
+      "contentId": "word_jhs1_see",
+      "questionType": "ja_to_en_choice",
+      "prompt": "例文「木に鳥が見えます。」で使う「自然に見える・目に入る」の英単語は？",
+      "choices": [
+        "see",
+        "look",
+        "watch",
+        "read"
+      ],
+      "correctAnswer": "see",
+      "hint": "意識しなくても自然に目に入る・見えるときに使います。",
+      "explanation": "この場面では see を使います。I can see a bird in the tree.",
+      "difficulty": 4
+    },
+    {
+      "id": "question_jhs1_see_spelling",
+      "contentType": "word",
+      "contentId": "word_jhs1_see",
+      "questionType": "spelling",
+      "prompt": "例文「木に鳥が見えます。」の「自然に見える・目に入る」を英語で入力しよう。",
+      "choices": [],
+      "correctAnswer": "see",
+      "hint": "意識しなくても自然に目に入る・見えるときに使います。",
+      "explanation": "see のつづりを完成させよう。I can see a bird in the tree.",
+      "difficulty": 5
+    },
+    {
+      "id": "question_jhs1_see_listening",
+      "contentType": "word",
+      "contentId": "word_jhs1_see",
+      "questionType": "listening_choice",
+      "audioText": "see",
+      "prompt": "リスニング 75 — 聞こえた英単語の意味を選ぼう。",
+      "choices": [
+        "自然に見える・目に入る",
+        "理解する",
+        "英語",
+        "姉妹"
+      ],
+      "correctAnswer": "自然に見える・目に入る",
+      "hint": "読み上げボタンでもう一度聞けます。",
+      "explanation": "聞こえた単語は see。「自然に見える・目に入る」です。",
+      "difficulty": 4
+    },
+    {
+      "id": "question_jhs1_look_meaning",
+      "contentType": "word",
+      "contentId": "word_jhs1_look",
+      "questionType": "en_to_ja_choice",
+      "prompt": "look の意味はどれ？",
+      "choices": [
+        "目を向けて見る",
+        "会う",
+        "日本語",
+        "祖父"
+      ],
+      "correctAnswer": "目を向けて見る",
+      "hint": "意識して人や物に目を向けるときに使います。",
+      "explanation": "look は「目を向けて見る」という意味です。例文: Look at this picture.",
+      "difficulty": 4
+    },
+    {
+      "id": "question_jhs1_look_production",
+      "contentType": "word",
+      "contentId": "word_jhs1_look",
+      "questionType": "ja_to_en_choice",
+      "prompt": "例文「この写真を見てください。」で使う「目を向けて見る」の英単語は？",
+      "choices": [
+        "look",
+        "see",
+        "watch",
+        "read"
+      ],
+      "correctAnswer": "look",
+      "hint": "意識して人や物に目を向けるときに使います。",
+      "explanation": "この場面では look を使います。Look at this picture.",
+      "difficulty": 4
+    },
+    {
+      "id": "question_jhs1_look_spelling",
+      "contentType": "word",
+      "contentId": "word_jhs1_look",
+      "questionType": "spelling",
+      "prompt": "例文「この写真を見てください。」の「目を向けて見る」を英語で入力しよう。",
+      "choices": [],
+      "correctAnswer": "look",
+      "hint": "意識して人や物に目を向けるときに使います。",
+      "explanation": "look のつづりを完成させよう。Look at this picture.",
+      "difficulty": 5
+    },
+    {
+      "id": "question_jhs1_look_listening",
+      "contentType": "word",
+      "contentId": "word_jhs1_look",
+      "questionType": "listening_choice",
+      "audioText": "look",
+      "prompt": "リスニング 76 — 聞こえた英単語の意味を選ぼう。",
+      "choices": [
+        "目を向けて見る",
+        "会う",
+        "日本語",
+        "祖父"
+      ],
+      "correctAnswer": "目を向けて見る",
+      "hint": "読み上げボタンでもう一度聞けます。",
+      "explanation": "聞こえた単語は look。「目を向けて見る」です。",
       "difficulty": 4
     },
     {
@@ -9342,14 +9522,14 @@
       "questionType": "en_to_ja_choice",
       "prompt": "watch の意味はどれ？",
       "choices": [
-        "見る",
+        "テレビ・動画などを見る",
         "電話する",
         "理科",
         "祖母"
       ],
-      "correctAnswer": "見る",
-      "hint": "最初の文字は W です。",
-      "explanation": "watch は「見る」という意味です。",
+      "correctAnswer": "テレビ・動画などを見る",
+      "hint": "テレビ・動画・試合など、動くものを続けて見るときに使います。",
+      "explanation": "watch は「テレビ・動画などを見る」という意味です。例文: We watch TV after dinner.",
       "difficulty": 4
     },
     {
@@ -9357,16 +9537,16 @@
       "contentType": "word",
       "contentId": "word_jhs1_watch",
       "questionType": "ja_to_en_choice",
-      "prompt": "「見る」を英語で選ぼう。",
+      "prompt": "例文「私たちは夕食後にテレビを見ます。」で使う「テレビ・動画などを見る」の英単語は？",
       "choices": [
         "watch",
-        "call",
-        "science",
-        "grandmother"
+        "see",
+        "look",
+        "read"
       ],
       "correctAnswer": "watch",
-      "hint": "最初の文字は W です。",
-      "explanation": "「見る」は watch といいます。",
+      "hint": "テレビ・動画・試合など、動くものを続けて見るときに使います。",
+      "explanation": "この場面では watch を使います。We watch TV after dinner.",
       "difficulty": 4
     },
     {
@@ -9374,11 +9554,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_watch",
       "questionType": "spelling",
-      "prompt": "「見る」を英語で入力しよう。",
+      "prompt": "例文「私たちは夕食後にテレビを見ます。」の「テレビ・動画などを見る」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "watch",
-      "hint": "最初の文字は W です。",
-      "explanation": "watch のつづりを完成させよう。",
+      "hint": "テレビ・動画・試合など、動くものを続けて見るときに使います。",
+      "explanation": "watch のつづりを完成させよう。We watch TV after dinner.",
       "difficulty": 5
     },
     {
@@ -9387,16 +9567,16 @@
       "contentId": "word_jhs1_watch",
       "questionType": "listening_choice",
       "audioText": "watch",
-      "prompt": "リスニング 75 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 77 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
-        "見る",
+        "テレビ・動画などを見る",
         "電話する",
         "理科",
         "祖母"
       ],
-      "correctAnswer": "見る",
+      "correctAnswer": "テレビ・動画などを見る",
       "hint": "読み上げボタンでもう一度聞けます。",
-      "explanation": "聞こえた単語は watch。「見る」です。",
+      "explanation": "聞こえた単語は watch。「テレビ・動画などを見る」です。",
       "difficulty": 4
     },
     {
@@ -9413,7 +9593,7 @@
       ],
       "correctAnswer": "聞く",
       "hint": "最初の文字は L です。",
-      "explanation": "listen は「聞く」という意味です。",
+      "explanation": "listen は「聞く」という意味です。例文: Listen to the teacher.",
       "difficulty": 4
     },
     {
@@ -9421,7 +9601,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_listen",
       "questionType": "ja_to_en_choice",
-      "prompt": "「聞く」を英語で選ぼう。",
+      "prompt": "例文「先生の話を聞きなさい。」で使う「聞く」の英単語は？",
       "choices": [
         "listen",
         "student",
@@ -9430,7 +9610,7 @@
       ],
       "correctAnswer": "listen",
       "hint": "最初の文字は L です。",
-      "explanation": "「聞く」は listen といいます。",
+      "explanation": "この場面では listen を使います。Listen to the teacher.",
       "difficulty": 4
     },
     {
@@ -9438,11 +9618,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_listen",
       "questionType": "spelling",
-      "prompt": "「聞く」を英語で入力しよう。",
+      "prompt": "例文「先生の話を聞きなさい。」の「聞く」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "listen",
       "hint": "最初の文字は L です。",
-      "explanation": "listen のつづりを完成させよう。",
+      "explanation": "listen のつづりを完成させよう。Listen to the teacher.",
       "difficulty": 5
     },
     {
@@ -9451,7 +9631,7 @@
       "contentId": "word_jhs1_listen",
       "questionType": "listening_choice",
       "audioText": "listen",
-      "prompt": "リスニング 76 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 78 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "聞く",
         "生徒",
@@ -9477,7 +9657,7 @@
       ],
       "correctAnswer": "読む",
       "hint": "最初の文字は R です。",
-      "explanation": "read は「読む」という意味です。",
+      "explanation": "read は「読む」という意味です。例文: I read a book after dinner.",
       "difficulty": 4
     },
     {
@@ -9485,7 +9665,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_read",
       "questionType": "ja_to_en_choice",
-      "prompt": "「読む」を英語で選ぼう。",
+      "prompt": "例文「私は夕食の後に本を読みます。」で使う「読む」の英単語は？",
       "choices": [
         "read",
         "teacher",
@@ -9494,7 +9674,7 @@
       ],
       "correctAnswer": "read",
       "hint": "最初の文字は R です。",
-      "explanation": "「読む」は read といいます。",
+      "explanation": "この場面では read を使います。I read a book after dinner.",
       "difficulty": 4
     },
     {
@@ -9502,11 +9682,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_read",
       "questionType": "spelling",
-      "prompt": "「読む」を英語で入力しよう。",
+      "prompt": "例文「私は夕食の後に本を読みます。」の「読む」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "read",
       "hint": "最初の文字は R です。",
-      "explanation": "read のつづりを完成させよう。",
+      "explanation": "read のつづりを完成させよう。I read a book after dinner.",
       "difficulty": 5
     },
     {
@@ -9515,7 +9695,7 @@
       "contentId": "word_jhs1_read",
       "questionType": "listening_choice",
       "audioText": "read",
-      "prompt": "リスニング 77 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 79 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "読む",
         "先生",
@@ -9541,7 +9721,7 @@
       ],
       "correctAnswer": "書く",
       "hint": "最初の文字は W です。",
-      "explanation": "write は「書く」という意味です。",
+      "explanation": "write は「書く」という意味です。例文: Write your name here.",
       "difficulty": 4
     },
     {
@@ -9549,7 +9729,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_write",
       "questionType": "ja_to_en_choice",
-      "prompt": "「書く」を英語で選ぼう。",
+      "prompt": "例文「ここに名前を書いてください。」で使う「書く」の英単語は？",
       "choices": [
         "write",
         "class",
@@ -9558,7 +9738,7 @@
       ],
       "correctAnswer": "write",
       "hint": "最初の文字は W です。",
-      "explanation": "「書く」は write といいます。",
+      "explanation": "この場面では write を使います。Write your name here.",
       "difficulty": 4
     },
     {
@@ -9566,11 +9746,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_write",
       "questionType": "spelling",
-      "prompt": "「書く」を英語で入力しよう。",
+      "prompt": "例文「ここに名前を書いてください。」の「書く」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "write",
       "hint": "最初の文字は W です。",
-      "explanation": "write のつづりを完成させよう。",
+      "explanation": "write のつづりを完成させよう。Write your name here.",
       "difficulty": 5
     },
     {
@@ -9579,7 +9759,7 @@
       "contentId": "word_jhs1_write",
       "questionType": "listening_choice",
       "audioText": "write",
-      "prompt": "リスニング 78 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 80 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "書く",
         "授業",
@@ -9605,7 +9785,7 @@
       ],
       "correctAnswer": "遊ぶ",
       "hint": "最初の文字は P です。",
-      "explanation": "play は「遊ぶ」という意味です。",
+      "explanation": "play は「遊ぶ」という意味です。例文: We play tennis after school.",
       "difficulty": 4
     },
     {
@@ -9613,7 +9793,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_play",
       "questionType": "ja_to_en_choice",
-      "prompt": "「遊ぶ」を英語で選ぼう。",
+      "prompt": "例文「私たちは放課後テニスをします。」で使う「遊ぶ」の英単語は？",
       "choices": [
         "play",
         "classroom",
@@ -9622,7 +9802,7 @@
       ],
       "correctAnswer": "play",
       "hint": "最初の文字は P です。",
-      "explanation": "「遊ぶ」は play といいます。",
+      "explanation": "この場面では play を使います。We play tennis after school.",
       "difficulty": 4
     },
     {
@@ -9630,11 +9810,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_play",
       "questionType": "spelling",
-      "prompt": "「遊ぶ」を英語で入力しよう。",
+      "prompt": "例文「私たちは放課後テニスをします。」の「遊ぶ」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "play",
       "hint": "最初の文字は P です。",
-      "explanation": "play のつづりを完成させよう。",
+      "explanation": "play のつづりを完成させよう。We play tennis after school.",
       "difficulty": 5
     },
     {
@@ -9643,7 +9823,7 @@
       "contentId": "word_jhs1_play",
       "questionType": "listening_choice",
       "audioText": "play",
-      "prompt": "リスニング 79 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 81 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "遊ぶ",
         "教室",
@@ -9669,7 +9849,7 @@
       ],
       "correctAnswer": "歩く",
       "hint": "最初の文字は W です。",
-      "explanation": "walk は「歩く」という意味です。",
+      "explanation": "walk は「歩く」という意味です。例文: I walk to school every day.",
       "difficulty": 4
     },
     {
@@ -9677,7 +9857,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_walk",
       "questionType": "ja_to_en_choice",
-      "prompt": "「歩く」を英語で選ぼう。",
+      "prompt": "例文「私は毎日学校へ歩いて行きます。」で使う「歩く」の英単語は？",
       "choices": [
         "walk",
         "desk",
@@ -9686,7 +9866,7 @@
       ],
       "correctAnswer": "walk",
       "hint": "最初の文字は W です。",
-      "explanation": "「歩く」は walk といいます。",
+      "explanation": "この場面では walk を使います。I walk to school every day.",
       "difficulty": 4
     },
     {
@@ -9694,11 +9874,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_walk",
       "questionType": "spelling",
-      "prompt": "「歩く」を英語で入力しよう。",
+      "prompt": "例文「私は毎日学校へ歩いて行きます。」の「歩く」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "walk",
       "hint": "最初の文字は W です。",
-      "explanation": "walk のつづりを完成させよう。",
+      "explanation": "walk のつづりを完成させよう。I walk to school every day.",
       "difficulty": 5
     },
     {
@@ -9707,7 +9887,7 @@
       "contentId": "word_jhs1_walk",
       "questionType": "listening_choice",
       "audioText": "walk",
-      "prompt": "リスニング 80 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 82 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "歩く",
         "机",
@@ -9733,7 +9913,7 @@
       ],
       "correctAnswer": "買う",
       "hint": "最初の文字は B です。",
-      "explanation": "buy は「買う」という意味です。",
+      "explanation": "buy は「買う」という意味です。例文: I buy a notebook at the store.",
       "difficulty": 4
     },
     {
@@ -9741,7 +9921,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_buy",
       "questionType": "ja_to_en_choice",
-      "prompt": "「買う」を英語で選ぼう。",
+      "prompt": "例文「私は店でノートを買います。」で使う「買う」の英単語は？",
       "choices": [
         "buy",
         "notebook",
@@ -9750,7 +9930,7 @@
       ],
       "correctAnswer": "buy",
       "hint": "最初の文字は B です。",
-      "explanation": "「買う」は buy といいます。",
+      "explanation": "この場面では buy を使います。I buy a notebook at the store.",
       "difficulty": 4
     },
     {
@@ -9758,11 +9938,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_buy",
       "questionType": "spelling",
-      "prompt": "「買う」を英語で入力しよう。",
+      "prompt": "例文「私は店でノートを買います。」の「買う」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "buy",
       "hint": "最初の文字は B です。",
-      "explanation": "buy のつづりを完成させよう。",
+      "explanation": "buy のつづりを完成させよう。I buy a notebook at the store.",
       "difficulty": 5
     },
     {
@@ -9771,7 +9951,7 @@
       "contentId": "word_jhs1_buy",
       "questionType": "listening_choice",
       "audioText": "buy",
-      "prompt": "リスニング 81 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 83 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "買う",
         "ノート",
@@ -9797,7 +9977,7 @@
       ],
       "correctAnswer": "開ける",
       "hint": "最初の文字は O です。",
-      "explanation": "open は「開ける」という意味です。",
+      "explanation": "open は「開ける」という意味です。例文: Please open the window.",
       "difficulty": 4
     },
     {
@@ -9805,7 +9985,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_open",
       "questionType": "ja_to_en_choice",
-      "prompt": "「開ける」を英語で選ぼう。",
+      "prompt": "例文「窓を開けてください。」で使う「開ける」の英単語は？",
       "choices": [
         "open",
         "pencil",
@@ -9814,7 +9994,7 @@
       ],
       "correctAnswer": "open",
       "hint": "最初の文字は O です。",
-      "explanation": "「開ける」は open といいます。",
+      "explanation": "この場面では open を使います。Please open the window.",
       "difficulty": 4
     },
     {
@@ -9822,11 +10002,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_open",
       "questionType": "spelling",
-      "prompt": "「開ける」を英語で入力しよう。",
+      "prompt": "例文「窓を開けてください。」の「開ける」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "open",
       "hint": "最初の文字は O です。",
-      "explanation": "open のつづりを完成させよう。",
+      "explanation": "open のつづりを完成させよう。Please open the window.",
       "difficulty": 5
     },
     {
@@ -9835,7 +10015,7 @@
       "contentId": "word_jhs1_open",
       "questionType": "listening_choice",
       "audioText": "open",
-      "prompt": "リスニング 82 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 84 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "開ける",
         "えんぴつ",
@@ -9861,7 +10041,7 @@
       ],
       "correctAnswer": "閉める",
       "hint": "最初の文字は C です。",
-      "explanation": "close は「閉める」という意味です。",
+      "explanation": "close は「閉める」という意味です。例文: Please close the door.",
       "difficulty": 4
     },
     {
@@ -9869,7 +10049,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_close",
       "questionType": "ja_to_en_choice",
-      "prompt": "「閉める」を英語で選ぼう。",
+      "prompt": "例文「ドアを閉めてください。」で使う「閉める」の英単語は？",
       "choices": [
         "close",
         "question",
@@ -9878,7 +10058,7 @@
       ],
       "correctAnswer": "close",
       "hint": "最初の文字は C です。",
-      "explanation": "「閉める」は close といいます。",
+      "explanation": "この場面では close を使います。Please close the door.",
       "difficulty": 4
     },
     {
@@ -9886,11 +10066,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_close",
       "questionType": "spelling",
-      "prompt": "「閉める」を英語で入力しよう。",
+      "prompt": "例文「ドアを閉めてください。」の「閉める」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "close",
       "hint": "最初の文字は C です。",
-      "explanation": "close のつづりを完成させよう。",
+      "explanation": "close のつづりを完成させよう。Please close the door.",
       "difficulty": 5
     },
     {
@@ -9899,7 +10079,7 @@
       "contentId": "word_jhs1_close",
       "questionType": "listening_choice",
       "audioText": "close",
-      "prompt": "リスニング 83 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 85 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "閉める",
         "質問",
@@ -9925,7 +10105,7 @@
       ],
       "correctAnswer": "教える",
       "hint": "最初の文字は T です。",
-      "explanation": "teach は「教える」という意味です。",
+      "explanation": "teach は「教える」という意味です。例文: Our teacher teaches English.",
       "difficulty": 4
     },
     {
@@ -9933,7 +10113,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_teach",
       "questionType": "ja_to_en_choice",
-      "prompt": "「教える」を英語で選ぼう。",
+      "prompt": "例文「私たちの先生は英語を教えます。」で使う「教える」の英単語は？",
       "choices": [
         "teach",
         "answer",
@@ -9942,7 +10122,7 @@
       ],
       "correctAnswer": "teach",
       "hint": "最初の文字は T です。",
-      "explanation": "「教える」は teach といいます。",
+      "explanation": "この場面では teach を使います。Our teacher teaches English.",
       "difficulty": 4
     },
     {
@@ -9950,11 +10130,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_teach",
       "questionType": "spelling",
-      "prompt": "「教える」を英語で入力しよう。",
+      "prompt": "例文「私たちの先生は英語を教えます。」の「教える」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "teach",
       "hint": "最初の文字は T です。",
-      "explanation": "teach のつづりを完成させよう。",
+      "explanation": "teach のつづりを完成させよう。Our teacher teaches English.",
       "difficulty": 5
     },
     {
@@ -9963,7 +10143,7 @@
       "contentId": "word_jhs1_teach",
       "questionType": "listening_choice",
       "audioText": "teach",
-      "prompt": "リスニング 84 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 86 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "教える",
         "答え",
@@ -9989,7 +10169,7 @@
       ],
       "correctAnswer": "学ぶ",
       "hint": "最初の文字は L です。",
-      "explanation": "learn は「学ぶ」という意味です。",
+      "explanation": "learn は「学ぶ」という意味です。例文: We learn English at school.",
       "difficulty": 4
     },
     {
@@ -9997,7 +10177,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_learn",
       "questionType": "ja_to_en_choice",
-      "prompt": "「学ぶ」を英語で選ぼう。",
+      "prompt": "例文「私たちは学校で英語を学びます。」で使う「学ぶ」の英単語は？",
       "choices": [
         "learn",
         "language",
@@ -10006,7 +10186,7 @@
       ],
       "correctAnswer": "learn",
       "hint": "最初の文字は L です。",
-      "explanation": "「学ぶ」は learn といいます。",
+      "explanation": "この場面では learn を使います。We learn English at school.",
       "difficulty": 4
     },
     {
@@ -10014,11 +10194,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_learn",
       "questionType": "spelling",
-      "prompt": "「学ぶ」を英語で入力しよう。",
+      "prompt": "例文「私たちは学校で英語を学びます。」の「学ぶ」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "learn",
       "hint": "最初の文字は L です。",
-      "explanation": "learn のつづりを完成させよう。",
+      "explanation": "learn のつづりを完成させよう。We learn English at school.",
       "difficulty": 5
     },
     {
@@ -10027,7 +10207,7 @@
       "contentId": "word_jhs1_learn",
       "questionType": "listening_choice",
       "audioText": "learn",
-      "prompt": "リスニング 85 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 87 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "学ぶ",
         "言語",
@@ -10053,7 +10233,7 @@
       ],
       "correctAnswer": "理解する",
       "hint": "最初の文字は U です。",
-      "explanation": "understand は「理解する」という意味です。",
+      "explanation": "understand は「理解する」という意味です。例文: I understand the question now.",
       "difficulty": 4
     },
     {
@@ -10061,7 +10241,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_understand",
       "questionType": "ja_to_en_choice",
-      "prompt": "「理解する」を英語で選ぼう。",
+      "prompt": "例文「私は今その質問が理解できます。」で使う「理解する」の英単語は？",
       "choices": [
         "understand",
         "English",
@@ -10070,7 +10250,7 @@
       ],
       "correctAnswer": "understand",
       "hint": "最初の文字は U です。",
-      "explanation": "「理解する」は understand といいます。",
+      "explanation": "この場面では understand を使います。I understand the question now.",
       "difficulty": 4
     },
     {
@@ -10078,11 +10258,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_understand",
       "questionType": "spelling",
-      "prompt": "「理解する」を英語で入力しよう。",
+      "prompt": "例文「私は今その質問が理解できます。」の「理解する」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "understand",
       "hint": "最初の文字は U です。",
-      "explanation": "understand のつづりを完成させよう。",
+      "explanation": "understand のつづりを完成させよう。I understand the question now.",
       "difficulty": 5
     },
     {
@@ -10091,7 +10271,7 @@
       "contentId": "word_jhs1_understand",
       "questionType": "listening_choice",
       "audioText": "understand",
-      "prompt": "リスニング 86 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 88 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "理解する",
         "英語",
@@ -10117,7 +10297,7 @@
       ],
       "correctAnswer": "会う",
       "hint": "最初の文字は M です。",
-      "explanation": "meet は「会う」という意味です。",
+      "explanation": "meet は「会う」という意味です。例文: We meet at the station.",
       "difficulty": 4
     },
     {
@@ -10125,7 +10305,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_meet",
       "questionType": "ja_to_en_choice",
-      "prompt": "「会う」を英語で選ぼう。",
+      "prompt": "例文「私たちは駅で会います。」で使う「会う」の英単語は？",
       "choices": [
         "meet",
         "Japanese",
@@ -10134,7 +10314,7 @@
       ],
       "correctAnswer": "meet",
       "hint": "最初の文字は M です。",
-      "explanation": "「会う」は meet といいます。",
+      "explanation": "この場面では meet を使います。We meet at the station.",
       "difficulty": 4
     },
     {
@@ -10142,11 +10322,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_meet",
       "questionType": "spelling",
-      "prompt": "「会う」を英語で入力しよう。",
+      "prompt": "例文「私たちは駅で会います。」の「会う」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "meet",
       "hint": "最初の文字は M です。",
-      "explanation": "meet のつづりを完成させよう。",
+      "explanation": "meet のつづりを完成させよう。We meet at the station.",
       "difficulty": 5
     },
     {
@@ -10155,7 +10335,7 @@
       "contentId": "word_jhs1_meet",
       "questionType": "listening_choice",
       "audioText": "meet",
-      "prompt": "リスニング 87 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 89 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "会う",
         "日本語",
@@ -10181,7 +10361,7 @@
       ],
       "correctAnswer": "電話する",
       "hint": "最初の文字は C です。",
-      "explanation": "call は「電話する」という意味です。",
+      "explanation": "call は「電話する」という意味です。例文: Please call me tonight.",
       "difficulty": 4
     },
     {
@@ -10189,7 +10369,7 @@
       "contentType": "word",
       "contentId": "word_jhs1_call",
       "questionType": "ja_to_en_choice",
-      "prompt": "「電話する」を英語で選ぼう。",
+      "prompt": "例文「今夜私に電話してください。」で使う「電話する」の英単語は？",
       "choices": [
         "call",
         "science",
@@ -10198,7 +10378,7 @@
       ],
       "correctAnswer": "call",
       "hint": "最初の文字は C です。",
-      "explanation": "「電話する」は call といいます。",
+      "explanation": "この場面では call を使います。Please call me tonight.",
       "difficulty": 4
     },
     {
@@ -10206,11 +10386,11 @@
       "contentType": "word",
       "contentId": "word_jhs1_call",
       "questionType": "spelling",
-      "prompt": "「電話する」を英語で入力しよう。",
+      "prompt": "例文「今夜私に電話してください。」の「電話する」を英語で入力しよう。",
       "choices": [],
       "correctAnswer": "call",
       "hint": "最初の文字は C です。",
-      "explanation": "call のつづりを完成させよう。",
+      "explanation": "call のつづりを完成させよう。Please call me tonight.",
       "difficulty": 5
     },
     {
@@ -10219,7 +10399,7 @@
       "contentId": "word_jhs1_call",
       "questionType": "listening_choice",
       "audioText": "call",
-      "prompt": "リスニング 88 — 聞こえた英単語の意味を選ぼう。",
+      "prompt": "リスニング 90 — 聞こえた英単語の意味を選ぼう。",
       "choices": [
         "電話する",
         "理科",
