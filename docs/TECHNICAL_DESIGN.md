@@ -316,7 +316,7 @@ if ("serviceWorker" in navigator) {
 
 ## 12. GitHub Pages配信
 
-正式公開先はGitHubリポジトリ`word-quest-jhs1`のGitHub Pagesです。公開URLは`https://ssshasimotosss-droid.github.io/word-quest-jhs1/`で、現在の検証済み配信コミットは`b108704`です。HTTP 200と公開URLに対するChrome E2Eを確認済みです。
+正式公開先はGitHubリポジトリ`word-quest-jhs1`のGitHub Pagesです。公開URLは`https://ssshasimotosss-droid.github.io/word-quest-jhs1/`で、現在の検証済み配信コミットは`f9de4b5`です。HTTP 200と公開URLに対するChrome E2Eを確認済みです。
 
 `main`ブランチにはソース、`gh-pages`ブランチには検証後の`dist/`のみを置きます。GitHub Pagesの公開元は`gh-pages`ブランチのルートです。これにより、現在のGitHub認証にActions workflow書き込み権限を追加せずに配信できます。
 
