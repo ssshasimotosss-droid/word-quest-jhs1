@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">WORD QUEST</title>
+  <desc id="desc">星空色の盾と、英語のWが輝く冒険の紋章</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a35"/>
+      <stop offset="0.5" stop-color="#123b78"/>
+      <stop offset="1" stop-color="#5c2da8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3a6"/>
+      <stop offset="0.45" stop-color="#ffc83d"/>
+      <stop offset="1" stop-color="#e77a12"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#32d9ff"/>
+      <stop offset="1" stop-color="#5261f2"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#sky)"/>
+  <g fill="#fff" opacity=".8">
+    <circle cx="91" cy="115" r="5"/><circle cx="414" cy="93" r="7"/>
+    <circle cx="434" cy="330" r="4"/><circle cx="80" cy="361" r="6"/>
+    <path d="m119 75 6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/>
+    <path d="m405 159 4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+  </g>
+  <path d="M256 70 404 126v113c0 98-60 164-148 203-88-39-148-105-148-203V126z" fill="#05132c" stroke="url(#gold)" stroke-width="18"/>
+  <path d="M256 100 373 143v92c0 76-43 132-117 169-74-37-117-93-117-169v-92z" fill="url(#shield)"/>
+  <path d="M168 178c33-16 64-12 88 8v143c-24-20-55-24-88-8zm176 0c-33-16-64-12-88 8v143c24-20 55-24 88-8z" fill="#f7fbff" stroke="#d8ebff" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M256 186v143" stroke="#8bb7e8" stroke-width="7"/>
+  <path d="m183 205 31 91 24-62 18 46 18-46 24 62 31-91" fill="none" stroke="#173b7a" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m256 116 9 20 22 2-17 15 5 22-19-11-19 11 5-22-17-15 22-2z" fill="url(#gold)" filter="url(#glow)"/>
+  <path d="M181 367h150" stroke="url(#gold)" stroke-width="13" stroke-linecap="round"/>
+</svg>
